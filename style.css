@@ -6,21 +6,24 @@ body {
 }
 
 .myname{
-background-color: aqua;
+  background-color: aqua;
 }
 td{
-position:relative;
+
 top: 80px;
   right: 40px;
-  left : 40 px;
+  left: 40px;
   width: 200px;
   height: 100px;
 }
 .visitkort{
-
-position:relative;
-top: 20px;
-left: 400px;
-
+  position:relative;
+  top: 20px;
+  left: 400px;
 }
 
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
