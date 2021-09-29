@@ -22,8 +22,3 @@ top: 80px;
   left: 400px;
 }
 
-.box{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
