@@ -1,10 +1,67 @@
-*{
-  margin: 20px
+*, *::before, *::after{
+  margin: 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 body {
-  background-color: aqua;
+background-color: #EDC7B7;
 }
 
+.visitkort{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.erlingaleks, .karenanne{
+  box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
+  max-width: 600px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  height: 335px;
+  position: relative;
+  left: 275px;
+  background-color: #BAB2B5;
+}
+
+
+
+.navn{
+  position: relative;
+  top: -180px;
+  left: 90px;
+}
+.tekst{
+  position: relative;
+  left: -210px;
+}
+.bilder{
+  border-radius: 50%;
+}
+.karenanne{
+  display: flex;
+  float: left;
+  width: 100%;
+
+}
+.erlingaleks{
+  display: flex;
+  float: left;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+/*
 .myname{
   background-color: aqua;
 }
@@ -16,14 +73,8 @@ top: 80px;
   width: 200px;
   height: 100px;
 }
-.visitkort{
-  position:relative;
-  top: 20px;
-  left: 400px;
-}
 
-.box{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+
+0 3px 15px rgb(0 0 0 / 0.3)
+
+ */
