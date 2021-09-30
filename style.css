@@ -13,19 +13,7 @@ background-color: #EDC7B7;
   justify-content: center;
   align-items: center;
 }
-/*
-.erlingaleks, .karenanne{
-  box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
-  max-width: 600px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  height: 335px;
-  position: relative;
-  left: 275px;
-  background-color: #BAB2B5;
-}
-*/
+
 
 #alle{
   display: grid;
@@ -38,22 +26,17 @@ background-color: #EDC7B7;
 .bilder{
   border-radius: 50%;
   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
-
 }
+
+
 .karenanne{
-  /*display: flex;
-  float: left;*/
   display:grid;
   width: 100%;
   background-color: #BAB2B5;
   max-width: 600px;
   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
-
-
 }
 .erlingaleks{
-  /*display: flex;
-  float: left;*/
   display:grid;
   width: 100%;
   background-color: #BAB2B5;
@@ -61,35 +44,32 @@ background-color: #EDC7B7;
   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
 }
 
-#karen-navn{
+.navn{
   grid-row: 1/4;
   grid-column: 3/5;
 }
-#karen-tekst{
+
+.tekst{
   grid-column: 1/4;
   grid-row: 2/6;
 }
-#anne-navn{
-  grid-row: 1/4;
-  grid-column: 3/5;
+
+.link:link{
+  text-decoration: none;
+  color: black;
 }
-#anne-tekst{
-  grid-column: 1/4;
-  grid-row: 2/6;
+
+.link:visited{
+
 }
-#erling-navn{
-  grid-row: 1/4;
-  grid-column: 3/5;
+
+.link:hover{
+  background: linear-gradient(#A8A7A7, #CC527A, #E8175D, #474747, #363636);
+  background-size: 5px;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
+  transform: scale(1.04);
+  opacity: 1;
 }
-#erling-tekst{
-  grid-column: 1/4;
-  grid-row: 2/6;
-}
-#aleks-navn{
-  grid-row: 1/4;
-  grid-column: 3/5;
-}
-#aleks-tekst{
-  grid-column: 1/4;
-  grid-row: 2/6;
+
+.link:active{
 }
