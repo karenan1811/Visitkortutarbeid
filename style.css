@@ -52,10 +52,19 @@ background-color: #EDC7B7;
   width: 100%;
   justify-content: space-around;
 }
-
-
-
-
+a:link, a:visited
+{
+  background-color: Crimson;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: Darkred;
+}
+a {text-align: center;}
 
 
 
