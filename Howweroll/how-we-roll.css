@@ -1,0 +1,11 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.divs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
