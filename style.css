@@ -32,7 +32,7 @@ background-color: #EDC7B7;
 .karenanne{
   display:grid;
   width: 100%;
-  background-color: #BAB2B5;
+  background-color:#BAB2B5;
   max-width: 600px;
   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
 }
@@ -44,6 +44,20 @@ background-color: #EDC7B7;
   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
 }
 
+#knapp:link, a:visited
+{
+  background-color: #BAB2B5;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+#knapp:hover, a:active {
+  background-color: Dimgray;
+}
+
 .navn{
   grid-row: 1/4;
   grid-column: 3/5;
@@ -53,14 +67,9 @@ background-color: #EDC7B7;
   grid-column: 1/4;
   grid-row: 2/6;
 }
-
 .link:link{
   text-decoration: none;
   color: black;
-}
-
-.link:visited{
-
 }
 
 .link:hover{
@@ -71,5 +80,9 @@ background-color: #EDC7B7;
   opacity: 1;
 }
 
+
+
+
 .link:active{
 }
+
