@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+body {
+    background-color: #EDC7B7;
+}
+.title{
+    overflow: hidden;
+    background-color: #040e1c;
+}
+.title{
+    float: none;
+    color: white;
+    text-align: center;
+}
+.Navigasjon{
+    overflow: hidden;
+    background-color: #040e1c;
+}
+
+
+.Navigasjon a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.Navigasjon a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.Navigasjon a.analyse {
+    background-color: springgreen;
+    color: black;
+}

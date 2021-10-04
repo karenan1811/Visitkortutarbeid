@@ -3,9 +3,49 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+.title{
+  margin: 0;
+}
+.Navigasjon{
+  margin: 0;
+}
 body {
 background-color: #EDC7B7;
 }
+.title{
+  overflow: hidden;
+  background-color: #040e1c;
+}
+.title{
+  float: none;
+  color: white;
+  text-align: center;
+}
+.Navigasjon{
+  overflow: hidden;
+  background-color: #040e1c;
+}
+
+
+.Navigasjon a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px 22px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.Navigasjon a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.Navigasjon a.Visittkort {
+  background-color: springgreen;
+  color: black;
+}
+
 
 .visitkort{
   width: 100%;
@@ -42,20 +82,6 @@ background-color: #EDC7B7;
   background-color: #BAB2B5;
   max-width: 600px;
   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
-}
-
-#knapp:link, a:visited
-{
-  background-color: #BAB2B5;
-  color: black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-
-}
-#knapp:hover, a:active {
-  background-color: Dimgray;
 }
 
 .navn{
