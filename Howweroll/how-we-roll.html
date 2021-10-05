@@ -10,44 +10,97 @@
 </head>
 
 <body>
-<header>
-    <h1>How We Roll</h1>
-</header>
+    <h1 class="visitkort">VISITKORT </h1>
 
-<div class="divs">
+    <a href="http://localhost:63342/Visitkortutarbeid/registering.html?_ijt=jbltkuf3iq02vv8qpievu1eui7&_ij_reload=RELOAD_ON_SAVE" target="_blank" id="knapp" >REGISTRERING</a>
+    <a href="Howweroll/how-we-roll.html" target="_blank" id="knapp" >Spørreundersøkelse</a>
 
-    <Label for="tidspunkt"><h5>Når liker du å jobbe best?</h5></Label>
-    <input type="range" min="1" max="100" class="ranges" id="tidspunkt" name="tidspunkt">
+<div class="divtables">
 
-    Morgenfugl
-    Natteravn
-
-
-    <Label for="jobbmengde"><h5>Hvor mye liker du å jobbe?</h5></Label>
-    <input type="range" min="1" max="100" class="ranges" name="jobbmengde" id="jobbmengde">
-
-    Latsabb
-    Arbeidsalkoholiker
-
-
-    <Label for="jobbteknikk"><h5>Hvordan liker du å jobbe?</h5></Label>
-    <input type="range" min="1" max="100" class="ranges" name="jobbteknikk" id="jobbteknikk">
-
-    Alene
-    Sammen
-
-    <Label for="jobbmengde"><h5>Hvor liker du å jobbe?</h5></Label>
-    <input type="range" min="1" max="100" class="ranges" name="jobbmengde" id="jobbmengde">
-
-    Skole
-    Hjemme
+    <Label for="tidspunkt"><h3>Når liker du å jobbe best?</h3></Label>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <input type="range" min="0" max="100" value="50" class="ranges" id="tidspunkt" name="tidspunkt">
+                </td>
+            </tr>
+            <tr>
+                <td>Morgenfugl</td>
+                <td></td>
+                <td class="right">Natteravn</td>
+            </tr>
+        </tbody>
+    </table>
 
 
-    <Label for="arbeidsteknikk"><h5>Hvilken føler du passer deg best?</h5></Label>
-    <input type="range" min="1" max="100" class="ranges" name="arbeidsteknikk" id="arbeidsteknikk" value="50">
+    <Label for="jobbmengde"><h3>Hvor mye liker du å jobbe?</h3></Label>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <input type="range" min="1" max="100" class="ranges" name="jobbmengde" id="jobbmengde">
+                </td>
+            </tr>
+            <tr>
+                <td>Latsabb</td>
+                <td></td>
+                <td class="right">Arbeidsmaniac</td>
+            </tr>
+        </tbody>
+    </table>
 
-    Prate litt først
-    Gå rett på sak
+
+    <Label for="jobbteknikk"><h3>Hvordan liker du å jobbe?</h3></Label>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td colspan="3">
+                <input type="range" min="1" max="100" class="ranges" name="jobbteknikk" id="jobbteknikk">
+            </td>
+        </tr>
+        <tr>
+            <td>Alene</td>
+            <td></td>
+            <td class="right">Sammen</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <Label for="jobbsted"><h3>Hvor liker du å jobbe?</h3></Label>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td colspan="3">
+                <input type="range" min="1" max="100" class="ranges" name="jobbsted" id="jobbsted">
+            </td>
+        </tr>
+        <tr>
+            <td>Hjemme</td>
+            <td></td>
+            <td class="right">Skole</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <Label for="arbeidsteknikk"><h3>Hvilken føler du passer deg best?</h3></Label>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td colspan="3">
+                <input type="range" min="1" max="100" class="ranges" name="arbeidsteknikk" id="arbeidsteknikk" value="50">
+            </td>
+        </tr>
+        <tr>
+            <td>Prate litt først</td>
+            <td></td>
+            <td class="right">Gå rett på sak</td>
+        </tr>
+        </tbody>
+    </table>
+
 
 </div>
 
