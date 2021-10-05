@@ -1,46 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <title>visitkort</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="how-we-roll.css">
     <script src="https://kit.fontawesome.com/ad1419809c.js" crossorigin="anonymous"></script>
     <meta name=viewport content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-<header>
-    <h1>How We Roll</h1>
+<header class="navbar">
+    <h1 class="visitkort">VISITKORT </h1>
+
+    <a href="http://localhost:63342/Visitkortutarbeid/registering.html?_ijt=jbltkuf3iq02vv8qpievu1eui7&_ij_reload=RELOAD_ON_SAVE" id="knapp" >REGISTRERING</a>
+    <a href="how-we-roll.html" id="knapp" >Spørreundersøkelse</a>
+    <a href="../index.html" id="knapp" >Visittkort</a>
 </header>
 
-<article id="article">
-    <div class="divs">
-    <Label for="tidspunkt"><h5>Når liker du å jobbe best?</h5></Label>
-    Morgenfugl<input style="width: 60%" type="range" max="10" min="1" class="ranges" id="tidspunkt" name="tidspunkt">Natteravn
-    </div>
+    <div class="divtables">
 
-    <div class="divs">
-    <Label for="jobbmengde"><h5>Hvor mye liker du å jobbe?</h5></Label>
-    Latsabb<input style="width: 60%" type="range" max="10" min="1" class="ranges" name="jobbmengde" id="jobbmengde">Arbeidsalkoholiker
-    </div>
+    <Label for="tidspunkt"><h3>Når liker du å jobbe best?</h3></Label>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <input type="range" min="1" max="100" value="50" class="ranges" id="tidspunkt" name="tidspunkt">
+                </td>
+            </tr>
+            <tr>
+                <td>Morgenfugl</td>
+                <td></td>
+                <td class="right">Natteravn</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <div class="divs">
-    <Label for="jobbteknikk"><h5>Hvordan liker du å jobbe?</h5></Label>
-    Alene<input style="width: 60%" type="range" max="10" min="1" class="ranges" name="jobbteknikk" id="jobbteknikk">Sammen
-    </div>
 
-    <div class="divs">
-    <Label for="jobbmengde"><h5>Hvor liker du å jobbe?</h5></Label>
-    Skole<input style="width: 60%" type="range" max="10" min="1" class="ranges" name="jobbmengde" id="jobbmengde">Hjemme
-    </div>
+    <Label for="jobbmengde"><h3>Hvor mye liker du å jobbe?</h3></Label>
+    <table class="table">
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    <input type="range" min="1" max="100" value="50" class="ranges" name="jobbmengde" id="jobbmengde">
+                </td>
+            </tr>
+            <tr>
+                <td>Latsabb</td>
+                <td></td>
+                <td class="right">Arbeidsmaniac</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <div class="divs">
-        <table>
-        <Label for="arbeidsteknikk"><h5>Hvilken føler du passer deg best?</h5></Label>
-        Prate litt først<input style="width: 60%" type="range" max="100" min="1" class="ranges" name="arbeidsteknikk" id="arbeidsteknikk" value="50">Gå rett på sak
-        </table>
-    </div>
-</article>
+
+    <Label for="jobbteknikk"><h3>Hvordan liker du å jobbe?</h3></Label>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td colspan="3">
+                <input type="range" min="1" max="100" value="50" class="ranges" name="jobbteknikk" id="jobbteknikk">
+            </td>
+        </tr>
+        <tr>
+            <td>Alene</td>
+            <td></td>
+            <td class="right">Sammen</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <Label for="jobbsted"><h3>Hvor liker du å jobbe?</h3></Label>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td colspan="3">
+                <input type="range" min="1" max="100" value="50" class="ranges" name="jobbsted" id="jobbsted">
+            </td>
+        </tr>
+        <tr>
+            <td>Hjemme</td>
+            <td></td>
+            <td class="right">Skole</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <Label for="arbeidsteknikk"><h3>Hvilken føler du passer deg best?</h3></Label>
+    <table class="table">
+        <tbody>
+        <tr>
+            <td colspan="3">
+                <input type="range" min="1" max="100" class="ranges" name="arbeidsteknikk" id="arbeidsteknikk" value="50">
+            </td>
+        </tr>
+        <tr>
+            <td>Prate litt først</td>
+            <td></td>
+            <td class="right">Gå rett på sak</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
 
 </body>
