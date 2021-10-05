@@ -1,4 +1,43 @@
 *, *::before, *::after{
     box-sizing: border-box;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
+body {
+    background-color: #EDC7B7;
+}
+/*Generelt for hele nettsiden*/
+
+.visitkort {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#knapp:hover, a:active {
+    background-color: Dimgray;
+}
+
+#knapp:link, a:visited
+{
+    background-color: #BAB2B5;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Tables*/
+.table{
+    width: 70%;
+}
+.ranges{
+    width: 100%;
+}
+.right{
+    text-align: right;
+}
+/*Tables*/
