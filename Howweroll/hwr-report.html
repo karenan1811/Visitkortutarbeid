@@ -31,6 +31,30 @@
   </tbody>
 </table></pre>
 </div>
+<br>
+<br>
+<center><p>Når liker du å jobbe best?</p></center>
+
+<div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div>
+<br>
+<br>
+<center><p>Hvor mye liker du å jobbe?</p></center>
+<div id="chartDiv1" style="width:50%; height:300px; margin:0 auto;"></div>
+<br>
+<br>
+<center><p>Hvordan liker du å jobbe?</p></center>
+<div id="chartDiv2" style="width:50%; height:300px; margin:0 auto;"></div>
+<br>
+<br>
+<center><p>Hvor liker du å jobbe?</p></center>
+<div id="chartDiv3" style="width:50%; height:300px; margin:0 auto;"></div>
+<br>
+<br>
+<center><p>Hvilken føler du passer deg best?</p></center>
+<div id="chartDiv4" style="width:50%; height:300px; margin:0 auto;"></div>
+<br>
+<br>
+
 </body>
 <script>
   Promise.all([
@@ -89,8 +113,71 @@
             tr4.insertCell(3).innerHTML = Math.max.apply(0,totalData.worktechnic);
             tr4.insertCell(4).innerHTML = Math.min.apply(0,totalData.worktechnic);
 
-
-
+            JSC.Chart('chartDiv', {
+              type: 'horizontal column',
+              series: [
+                {
+                  points: [
+                    {x: 'Karen', y: Number(data[0].tidspunkt)},
+                    {x: 'Anne', y: Number(data[1].tidspunkt)},
+                    {x: 'Erling', y: Number(data[2].tidspunkt)},
+                    {x: 'Aleksander', y: Number(data[3].tidspunkt)}
+                  ]
+                }
+              ]
+            });
+            JSC.Chart('chartDiv1', {
+              type: 'horizontal column',
+              series: [
+                {
+                  points: [
+                    {x: 'Karen', y: Number(data[0].jobbmengde)},
+                    {x: 'Anne', y: Number(data[1].jobbmengde)},
+                    {x: 'Erling', y: Number(data[2].jobbmengde)},
+                    {x: 'Aleksander', y: Number(data[3].jobbmengde)}
+                  ]
+                }
+              ]
+            });
+            JSC.Chart('chartDiv2', {
+              type: 'horizontal column',
+              series: [
+                {
+                  points: [
+                    {x: 'Karen', y: Number(data[0].jobbteknikk)},
+                    {x: 'Anne', y: Number(data[1].jobbteknikk)},
+                    {x: 'Erling', y: Number(data[2].jobbteknikk)},
+                    {x: 'Aleksander', y: Number(data[3].jobbteknikk)}
+                  ]
+                }
+              ]
+            });
+            JSC.Chart('chartDiv3', {
+              type: 'horizontal column',
+              series: [
+                {
+                  points: [
+                    {x: 'Karen', y: Number(data[0].jobbsted)},
+                    {x: 'Anne', y: Number(data[1].jobbsted)},
+                    {x: 'Erling', y: Number(data[2].jobbsted)},
+                    {x: 'Aleksander', y: Number(data[3].jobbsted)}
+                  ]
+                }
+              ]
+            });
+            JSC.Chart('chartDiv4', {
+              type: 'horizontal column',
+              series: [
+                {
+                  points: [
+                    {x: 'Karen', y: Number(data[0].arbeidsteknikk)},
+                    {x: 'Anne', y: Number(data[1].arbeidsteknikk)},
+                    {x: 'Erling', y: Number(data[2].arbeidsteknikk)},
+                    {x: 'Aleksander', y: Number(data[3].arbeidsteknikk)}
+                  ]
+                }
+              ]
+            });
           });
   function findAverage(arr) {
     let total = 0;
@@ -101,6 +188,8 @@
   }
 
 </script>
+<script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+
 </body>
 </html>
 
