@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="176bba3c-b30b-4e91-87c6-7f0e3c165c3b" name="Changes" comment="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css">
+      <change afterPath="$PROJECT_DIR$/Howweroll/hwr-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registering.html" beforeDir="false" afterPath="$PROJECT_DIR$/registering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Howweroll/how-we-roll.css" beforeDir="false" afterPath="$PROJECT_DIR$/Howweroll/how-we-roll.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Howweroll/how-we-roll.html" beforeDir="false" afterPath="$PROJECT_DIR$/Howweroll/how-we-roll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registrering.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myscript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/registering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/karen" />
@@ -25,8 +39,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/practice/index.html" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -37,6 +53,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633445154285</updated>
+      <workItem from="1633616555209" duration="37000" />
+      <workItem from="1633616605476" duration="5000" />
+      <workItem from="1633616627193" duration="63000" />
+      <workItem from="1633616816498" duration="325000" />
+      <workItem from="1633638373939" duration="178000" />
+      <workItem from="1633711081517" duration="2298000" />
     </task>
     <task id="LOCAL−00001" summary="new files">
       <created>1633456947894</created>
@@ -56,10 +78,28 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1633458894245</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css">
+      <created>1633522484636</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1633522484636</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">

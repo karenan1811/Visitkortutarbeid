@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registreing</title>
+
+  <link rel="stylesheet" href="how-we-roll.css">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+
+<body>
+<header class="navbar">
+  <a href="http://localhost:63342/Visitkortutarbeid/Howweroll/how-we-roll.html?_ijt=7t400o1nbv1edvqcotse099ojg" id="knapp" >REGISTRERING</a>
+  <a href="http://localhost:63342/Visitkortutarbeid/index.html?_ijt=ts5dat761vvrn11n83q04egc2p" id="knapp1" >Visittkort</a>
+  <a href="http://localhost:63342/Visitkortutarbeid/Howweroll/hwr-report.html?_ijt=8hdb6ru41vft1qsvc9qghs1c2v" id="knapp2">Report</a>
+</header>
+</header>
+<div class='results'>
+  Her kommer resultat:<br>
+  <pre><center>Statistisk Resultater</center>
+            <table class="center">
+                <thead class="report-table">
+  <tr>
+    <th>Report-Navn</th>
+    <th>Elementer</th>
+      <th>Gjennomsnitt</th>
+    <th>Maximum Verdi</th>
+      <th>Minimum Verdi</th>
+  </tr>
+                </thead>
+  <tbody class="report-table">
+  </tbody>
+</table></pre>
+</div>
+</body>
+<script>
+  Promise.all([
+    fetch('https://bacit.info/hwr/20211007222630-d1ec038b1d2a2589c06e37e4a3057c0a.json').then(response => response.json()), //Karen
+    fetch('https://bacit.info/hwr/20211007222801-738b01c08a4831480969d4fee2a40b90.json').then(response => response.json()), //Anne
+    fetch('https://bacit.info/hwr/20211007222925-3f379424b79b0427e626c4aca94b7be5.json').then(response => response.json()), //Erling
+    fetch('https://bacit.info/hwr/20211007222439-00cc44d13308f7bb6e0afcb0bb8b5e2e.json').then(response => response.json()), //Aleksander
+  ])
+          .then(data => {
+
+            //Henter ut data for hver enkelt person i en egen variabel/array for å gjøre oversikten i koden bedre. Hadde det vært et dynamisk system så hadde ikke dette vært nødvendig/mulig
+            const karen = data[0];
+            const anne = data[1];
+            const erling = data[2];
+            const aleksander = data[3];
+
+            const hours = [Number(data[0].tidspunkt),Number(data[1].tidspunkt),Number(data[2].tidspunkt),Number(data[3].tidspunkt)];
+            const jobbmengder = [Number(data[0].jobbmengde),Number(data[1].jobbmengde),Number(data[2].jobbmengde),Number(data[3].jobbmengde)];
+            const jobbteknikker = [Number(data[0].jobbteknikk),Number(data[1].jobbteknikk),Number(data[2].jobbteknikk),Number(data[3].jobbteknikk)];
+            const jobbsteder = [Number(data[0].jobbsted),Number(data[1].jobbsted),Number(data[2].jobbsted),Number(data[3].jobbsted)];
+            const arbeidsteknikker = [Number(data[0].arbeidsteknikk),Number(data[1].arbeidsteknikk),Number(data[2].arbeidsteknikk),Number(data[3].arbeidsteknikk)];
+            const results = document.querySelector('.results pre');
+            const totalData = {time:hours, worklength:jobbmengder, jobtechnic:jobbteknikker,workplace:jobbsteder,worktechnic:arbeidsteknikker};
+            console.log(totalData);
+            let table = document.querySelector(".center");
+
+            let tr = table.insertRow();
+            tr.insertCell(0).innerHTML = "Når liker du å jobbe best?";
+            tr.insertCell(1).innerHTML = totalData.time;
+            tr.insertCell(2).innerHTML = findAverage(totalData.time);
+            tr.insertCell(3).innerHTML = Math.max.apply(0,totalData.time);
+            tr.insertCell(4).innerHTML = Math.min.apply(0,totalData.time);
+            let tr1 = table.insertRow();
+            tr1.insertCell(0).innerHTML = "Hvor mye liker du å jobbe?";
+            tr1.insertCell(1).innerHTML = totalData.worklength;
+            tr1.insertCell(2).innerHTML = findAverage(totalData.worklength);
+            tr1.insertCell(3).innerHTML = Math.max.apply(0,totalData.worklength);
+            tr1.insertCell(4).innerHTML = Math.min.apply(0,totalData.worklength);
+            let tr2 = table.insertRow();
+            tr2.insertCell(0).innerHTML = "Hvordan liker du å jobbe?";
+            tr2.insertCell(1).innerHTML = totalData.jobtechnic;
+            tr2.insertCell(2).innerHTML = findAverage(totalData.jobtechnic);
+            tr2.insertCell(3).innerHTML = Math.max.apply(0,totalData.jobtechnic);
+            tr2.insertCell(4).innerHTML = Math.min.apply(0,totalData.jobtechnic);
+
+            let tr3 = table.insertRow();
+            tr3.insertCell(0).innerHTML = "Hvor liker du å jobbe?";
+            tr3.insertCell(1).innerHTML = totalData.workplace;
+            tr3.insertCell(2).innerHTML = findAverage(totalData.workplace);
+            tr3.insertCell(3).innerHTML = Math.max.apply(0,totalData.workplace);
+            tr3.insertCell(4).innerHTML = Math.min.apply(0,totalData.workplace);
+            let tr4 = table.insertRow();
+            tr4.insertCell(0).innerHTML = "Hvilken føler du passer deg best?";
+            tr4.insertCell(1).innerHTML = totalData.worktechnic;
+            tr4.insertCell(2).innerHTML = findAverage(totalData.worktechnic);
+            tr4.insertCell(3).innerHTML = Math.max.apply(0,totalData.worktechnic);
+            tr4.insertCell(4).innerHTML = Math.min.apply(0,totalData.worktechnic);
+
+
+
+          });
+  function findAverage(arr) {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+      total += arr[i] ;
+    }
+    return total/ arr.length
+  }
+
+</script>
+</body>
+</html>
+
+
+</body>
+</html>

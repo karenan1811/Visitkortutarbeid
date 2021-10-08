@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>visitkort</title>
+    <title>Registreing</title>
+
     <link rel="stylesheet" href="how-we-roll.css">
-    <script src="https://kit.fontawesome.com/ad1419809c.js" crossorigin="anonymous"></script>
     <meta name=viewport content="width=device-width, initial-scale=1">
-
-</head>
-
 <body>
 <header class="navbar">
-    <h1 class="visitkort">VISITKORT </h1>
 
-    <a href="http://localhost:63342/Visitkortutarbeid/registering.html?_ijt=jbltkuf3iq02vv8qpievu1eui7&_ij_reload=RELOAD_ON_SAVE" id="knapp" >REGISTRERING</a>
-    <a href="how-we-roll.html" id="knapp" >Spørreundersøkelse</a>
-    <a href="../index.html" id="knapp" >Visittkort</a>
+    <a href="http://localhost:63342/Visitkortutarbeid/Howweroll/how-we-roll.html?_ijt=7t400o1nbv1edvqcotse099ojg" id="knapp" >REGISTRERING</a>
+    <a href="http://localhost:63342/Visitkortutarbeid/index.html?_ijt=ts5dat761vvrn11n83q04egc2p" id="knapp1" >Visittkort</a>
+    <a href="http://localhost:63342/Visitkortutarbeid/Howweroll/hwr-report.html?_ijt=8hdb6ru41vft1qsvc9qghs1c2v" id="knapp2">Report</a>
 </header>
+
+<center><h2 class="headerforhow">Registrering for How we Roll</h2></center>
+
+<form id="myform">
+    <table class="table">
+        <tr>
+            <td>
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Name" id="name" name="name"/><br>
+            </td>
+            <td>
+                <label for="surname">Surname</label><br>
+                <input type="text" placeholder="Surname" id="surname" name="surname"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="contact">Contact</label><br>
+                <input type="text" placeholder="Contact" id="contact" name="contact"><br>
+            </td>
+            <td>
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="Email" id="email" name="email"/><br>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Message</h4>
+
+    <textarea name="message" id="message" placeholder="Your message" rows="10" cols="30"></textarea><br>
 
     <div class="divtables">
 
-    <Label for="tidspunkt"><h3>Når liker du å jobbe best?</h3></Label>
-    <table class="table">
-        <tbody>
+        <Label for="tidspunkt"><h3>Når liker du å jobbe best?</h3></Label>
+        <table class="table">
+            <tbody>
             <tr>
                 <td colspan="3">
                     <input type="range" min="1" max="100" value="50" class="ranges" id="tidspunkt" name="tidspunkt">
@@ -33,13 +59,13 @@
                 <td></td>
                 <td class="right">Natteravn</td>
             </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
 
-    <Label for="jobbmengde"><h3>Hvor mye liker du å jobbe?</h3></Label>
-    <table class="table">
-        <tbody>
+        <Label for="jobbmengde"><h3>Hvor mye liker du å jobbe?</h3></Label>
+        <table class="table">
+            <tbody>
             <tr>
                 <td colspan="3">
                     <input type="range" min="1" max="100" value="50" class="ranges" name="jobbmengde" id="jobbmengde">
@@ -50,62 +76,109 @@
                 <td></td>
                 <td class="right">Arbeidsmaniac</td>
             </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
 
-    <Label for="jobbteknikk"><h3>Hvordan liker du å jobbe?</h3></Label>
-    <table class="table">
-        <tbody>
-        <tr>
-            <td colspan="3">
-                <input type="range" min="1" max="100" value="50" class="ranges" name="jobbteknikk" id="jobbteknikk">
-            </td>
-        </tr>
-        <tr>
-            <td>Alene</td>
-            <td></td>
-            <td class="right">Sammen</td>
-        </tr>
-        </tbody>
-    </table>
+        <Label for="jobbteknikk"><h3>Hvordan liker du å jobbe?</h3></Label>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <input type="range" min="1" max="100" value="50" class="ranges" name="jobbteknikk" id="jobbteknikk">
+                </td>
+            </tr>
+            <tr>
+                <td>Alene</td>
+                <td></td>
+                <td class="right">Sammen</td>
+            </tr>
+            </tbody>
+        </table>
 
 
-    <Label for="jobbsted"><h3>Hvor liker du å jobbe?</h3></Label>
-    <table class="table">
-        <tbody>
-        <tr>
-            <td colspan="3">
-                <input type="range" min="1" max="100" value="50" class="ranges" name="jobbsted" id="jobbsted">
-            </td>
-        </tr>
-        <tr>
-            <td>Hjemme</td>
-            <td></td>
-            <td class="right">Skole</td>
-        </tr>
-        </tbody>
-    </table>
+        <Label for="jobbsted"><h3>Hvor liker du å jobbe?</h3></Label>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <input type="range" min="1" max="100" value="50" class="ranges" name="jobbsted" id="jobbsted">
+                </td>
+            </tr>
+            <tr>
+                <td>Hjemme</td>
+                <td></td>
+                <td class="right">Skole</td>
+            </tr>
+            </tbody>
+        </table>
 
 
-    <Label for="arbeidsteknikk"><h3>Hvilken føler du passer deg best?</h3></Label>
-    <table class="table">
-        <tbody>
-        <tr>
-            <td colspan="3">
-                <input type="range" min="1" max="100" class="ranges" name="arbeidsteknikk" id="arbeidsteknikk" value="50">
-            </td>
-        </tr>
-        <tr>
-            <td>Prate litt først</td>
-            <td></td>
-            <td class="right">Gå rett på sak</td>
-        </tr>
-        </tbody>
-    </table>
+        <Label for="arbeidsteknikk"><h3>Hvilken føler du passer deg best?</h3></Label>
+        <table class="table">
+            <tbody>
+            <tr>
+                <td colspan="3">
+                    <input type="range" min="1" max="100" class="ranges" name="arbeidsteknikk" id="arbeidsteknikk" value="50">
+                </td>
+            </tr>
+            <tr>
+                <td>Prate litt først</td>
+                <td></td>
+                <td class="right">Gå rett på sak</td>
+            </tr>
+            </tbody>
+        </table>
 
 
+    </div>
+
+    <div class="btncontainer">
+        <input type="reset" value="Slett">
+        <button class="btn submit" type="submit" onclick="setTimeout(function() { window.scrollTo(0,document.body.scrollHeight) }, 750)">
+            Submit
+        </button>
+    </div>
+
+</form>
+<div class='results'>
+    Her kommer resultat:<br>
+    <pre></pre>
 </div>
+<script> async function postData(url = '', data = {}) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'no-cache', // *default, no-cache, reload, force-cache,only-if-cached
+        credentials: 'same-origin', // include, *same-origin, omit
+        headers: {
+            'Content-Type': 'application/json',
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        redirect: 'follow', // manual, *follow, error
+        referrerPolicy: 'no-referrer', // no-referrer,*no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+        body: JSON.stringify(data) // body data type must match"Content-Type"header
+    });
+    return response.json(); // parses JSON response into native JavaScriptobjects
+}
 
 
+function handleSubmit(event) {
+    event.preventDefault();
+    const data = new FormData(event.target);
+    const formJSON = Object.fromEntries(data.entries());
+    const results = document.querySelector('.results pre');
+    postData('https://bacit.info/', formJSON)
+        .then(data => {
+            results.innerText = JSON.stringify(data, null, 2);
+            document.getElementById("myform").reset();
+            return false;
+        });
+}
+const form = document.querySelector('form');
+form.addEventListener('submit', handleSubmit);
+</script>
 </body>
+
+</html>

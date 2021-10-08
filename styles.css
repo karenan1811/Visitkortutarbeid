@@ -4,7 +4,7 @@
   font-family: sans-serif;
 }
 body {
-background-color: #EDC7B7;
+  background-color: #EDC7B7;
 }
 
 
@@ -75,8 +75,6 @@ background-color: #EDC7B7;
 }
 /*Links-Visittkort*/
 
-
-/*Knapp, navbar*/
 #knapp:link, a:visited
 {
   background-color: #BAB2B5;
@@ -87,9 +85,30 @@ background-color: #EDC7B7;
   display: inline-block;
 
 }
-#knapp:hover, a:active {
+/*Knapp, navbar*/
+#knapp1:link, a:visited
+{
+  background-color: #BAB2B5;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+#knapp2:link, a:visited
+{
+  background-color: #BAB2B5;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+#knapp1:hover, a:active {
   background-color: Dimgray;
 }
-/*Knapp, navbar*/
-
-
+#knapp2:hover, a:active {
+  background-color: Dimgray;
+}
