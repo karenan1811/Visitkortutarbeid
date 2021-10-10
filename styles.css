@@ -1,28 +1,44 @@
 *, *::before, *::after{
-  margin: 20px;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 body {
   background-color: #EDC7B7;
+  margin: 0;
 }
 
 
-/*Visittkort*/
+/*navbar*/
 .visitkort{
-  width: 100%;
+ margin-right: auto;
+  margin-left: 20px;
+}
+
+.knapp{
+  margin-left: auto;
+}
+
+.navbar{
   display: flex;
-  justify-content: center;
+  width: 100%;
+  background-color: #001f3f;
   align-items: center;
 }
 
+
 #alle{
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: -10px;
+   */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 20px;
 }
-
 
 .bilder{
   border-radius: 50%;
@@ -33,6 +49,7 @@ body {
   display:grid;
   width: 100%;
   background-color:#BAB2B5;
+  min-width: 600px;
   max-width: 600px;
   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
 }
@@ -75,40 +92,16 @@ body {
 }
 /*Links-Visittkort*/
 
-#knapp:link, a:visited
-{
+.knapp:link, a:visited {
   background-color: #BAB2B5;
   color: black;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-
 }
-/*Knapp, navbar*/
-#knapp1:link, a:visited
-{
-  background-color: #BAB2B5;
-  color: black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
 
-}
-#knapp2:link, a:visited
-{
-  background-color: #BAB2B5;
-  color: black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-
-}
-#knapp1:hover, a:active {
+.knapp:hover, a:active {
   background-color: Dimgray;
 }
-#knapp2:hover, a:active {
-  background-color: Dimgray;
-}
+

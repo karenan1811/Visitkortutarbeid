@@ -4,60 +4,34 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-color: #EDC7B7;
+    background-color: #ede8e8;
 }
+
 /*Generelt for hele nettsiden*/
 
-.visitkort {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#knapp:link, a:visited
-{
+.knapp:link, a:visited {
     background-color: #BAB2B5;
     color: black;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-
 }
-/*Knapp, navbar*/
-#knapp1:link, a:visited
-{
-    background-color: #BAB2B5;
-    color: black;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
 
-}
-#knapp2:link, a:visited
-{
-    background-color: #BAB2B5;
-    color: black;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-
-}
-#knapp1:hover, a:active {
+.knapp:hover, a:active {
     background-color: Dimgray;
 }
-#knapp2:hover, a:active {
-    background-color: Dimgray;
-}
+
 /*Tables*/
+#myform, form{
+    margin-left: 30px;
+}
+
 
 .table{
     width: 70%;
-    margin-bottom: 5%;
 }
 .ranges{
     width: 100%;
@@ -65,101 +39,40 @@ body {
 .right{
     text-align: right;
 }
-.headerforhow{
-    margin-bottom: 5%;
-}
-input{
-    width:60%;
-    height:30%;
-    margin-bottom: 5%;
-}
-/*Tables*/
 
-table.center {
-    background-color: #BAB2B5;
-    margin-left: auto;
+.margintable{
+    margin-top: 20px;
+}
+
+.divtables{
+    margin-top: 20px;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #033569;
+    flex-direction: column;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.3);
+    margin-bottom: 20px;
+}
+
+.links{
     margin-right: auto;
+    margin-top: 26px;
+    margin-left: 30px;
 }
-*, *::before, *::after{
-    box-sizing: border-box;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
-body {
-    background-color: #EDC7B7;
-}
-/*Generelt for hele nettsiden*/
 
-.visitkort {
+#tittel{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
 }
-
-#knapp:link, a:visited
-{
-    background-color: #BAB2B5;
-    color: black;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-
-}
-/*Knapp, navbar*/
-#knapp1:link, a:visited
-{
-    background-color: #BAB2B5;
-    color: black;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-
-}
-#knapp2:link, a:visited
-{
-    background-color: #BAB2B5;
-    color: black;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-
-}
-#knapp1:hover, a:active {
-    background-color: Dimgray;
-}
-#knapp2:hover, a:active {
-    background-color: Dimgray;
-}
-/*Tables*/
-
-.table{
-    width: 70%;
-    margin-bottom: 5%;
-}
-.ranges{
-    width: 100%;
-}
-.right{
-    text-align: right;
-}
-.headerforhow{
-    margin-bottom: 5%;
-}
-input{
-    width:60%;
-    height:30%;
-    margin-bottom: 5%;
-}
-#message{
-    margin-bottom:5%;
-}
-/*Tables*/
-
-.resultat-table{
-
+.gruppe{
+    margin-top: 20px;
+    font-size: 50px;
+    margin-right: auto;
+    margin-left: 30px;
+    color: #DC143C	;
 }
