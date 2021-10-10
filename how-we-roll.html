@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Registreing</title>
-
     <link rel="stylesheet" href="how-we-roll.css">
     <meta name=viewport content="width=device-width, initial-scale=1">
 <body>
 <header class="navbar">
-    <h2 class="headerforhow">Registrering for How we Roll</h2>
-    <a href="how-we-roll.html" class="knapp" >REGISTRERING</a>
-    <a href="index.html" class="knapp" >Visittkort</a>
-    <a href="hwr-report.html" class="knapp">Report</a>
+    <div class="padding">
+        <h2 class="gruppe">Gruppe 2B</h2>
+        <div class="links">
+            <a href="how-we-roll.html" class="knapp" >REGISTRERING</a>
+            <a href="index.html" class="knapp" >Visittkort</a>
+            <a href="hwr-report.html" class="knapp">Report</a>
+        </div>
+    </div>
 </header>
 
-
+<h1 id="tittel">Spørreundersøkelse</h1>
 <form id="myform">
     <table class="table">
         <tr>
@@ -45,7 +48,7 @@
 
     <div class="divtables">
 
-        <Label for="tidspunkt"><h3>Når liker du å jobbe best?</h3></Label>
+        <Label for="tidspunkt"><h3 class="margintable">Når liker du å jobbe best?</h3></Label>
         <table class="table">
             <tbody>
             <tr>
@@ -62,7 +65,7 @@
         </table>
 
 
-        <Label for="jobbmengde"><h3>Hvor mye liker du å jobbe?</h3></Label>
+        <Label for="jobbmengde"><h3 class="margintable">Hvor mye liker du å jobbe?</h3></Label>
         <table class="table">
             <tbody>
             <tr>
@@ -79,7 +82,7 @@
         </table>
 
 
-        <Label for="jobbteknikk"><h3>Hvordan liker du å jobbe?</h3></Label>
+        <Label for="jobbteknikk"><h3 class="margintable">Hvordan liker du å jobbe?</h3></Label>
         <table class="table">
             <tbody>
             <tr>
@@ -96,7 +99,7 @@
         </table>
 
 
-        <Label for="jobbsted"><h3>Hvor liker du å jobbe?</h3></Label>
+        <Label for="jobbsted"><h3 class="margintable">Hvor liker du å jobbe?</h3></Label>
         <table class="table">
             <tbody>
             <tr>
@@ -113,7 +116,7 @@
         </table>
 
 
-        <Label for="arbeidsteknikk"><h3>Hvilken føler du passer deg best?</h3></Label>
+        <Label for="arbeidsteknikk"><h3 class="margintable">Hvilken føler du passer deg best?</h3></Label>
         <table class="table">
             <tbody>
             <tr>
@@ -137,12 +140,11 @@
         <button class="btn submit" type="submit" onclick="setTimeout(function() { window.scrollTo(0,document.body.scrollHeight) }, 750)">
             Submit
         </button>
-    </div>
 
 </form>
-<div class='results'>
-    Her kommer resultat:<br>
-    <pre></pre>
+    <div class='results'>
+        Her kommer resultat:<br>
+    </div>
 </div>
 <script> async function postData(url = '', data = {}) {
     // Default options are marked with *
