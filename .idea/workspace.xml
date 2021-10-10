@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="176bba3c-b30b-4e91-87c6-7f0e3c165c3b" name="Changes" comment="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css">
+    <list default="true" id="176bba3c-b30b-4e91-87c6-7f0e3c165c3b" name="Changes" comment="&#10;Jeg har endret hwr-report.html med grafer.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Howweroll/how-we-roll.css" beforeDir="false" afterPath="$PROJECT_DIR$/Howweroll/how-we-roll.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Howweroll/how-we-roll.html" beforeDir="false" afterPath="$PROJECT_DIR$/Howweroll/how-we-roll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Howweroll/hwr-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Howweroll/hwr-report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,8 @@
       <workItem from="1633616627193" duration="63000" />
       <workItem from="1633616816498" duration="325000" />
       <workItem from="1633638373939" duration="178000" />
-      <workItem from="1633711081517" duration="3919000" />
+      <workItem from="1633711081517" duration="5119000" />
+      <workItem from="1633885410692" duration="9000" />
     </task>
     <task id="LOCAL−00001" summary="new files">
       <created>1633456947894</created>
@@ -86,7 +84,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1633713556356</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="&#10;Jeg har endret hwr-report.html med grafer.">
+      <created>1633717009762</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1633717009762</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +111,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new files" />
     <MESSAGE value="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css" />
+    <MESSAGE value="&#10;Jeg har endret hwr-report.html med grafer." />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Jeg har endret hwr-report.html med grafer." />
   </component>
 </project>
