@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="176bba3c-b30b-4e91-87c6-7f0e3c165c3b" name="Changes" comment="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ekstra/index2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ekstra/styles2.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/how-we-roll.css" beforeDir="false" afterPath="$PROJECT_DIR$/how-we-roll.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/how-we-roll.html" beforeDir="false" afterPath="$PROJECT_DIR$/how-we-roll.html" afterDir="false" />
     </list>
@@ -58,7 +56,8 @@
       <workItem from="1633638373939" duration="178000" />
       <workItem from="1633711081517" duration="3919000" />
       <workItem from="1633859614777" duration="92000" />
-      <workItem from="1633859735610" duration="9484000" />
+      <workItem from="1633859735610" duration="11783000" />
+      <workItem from="1633877054017" duration="237000" />
     </task>
     <task id="LOCAL−00001" summary="new files">
       <created>1633456947894</created>
