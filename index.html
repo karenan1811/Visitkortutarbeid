@@ -1,81 +1,264 @@
 <!DOCTYPE html>
-<html lang="nb">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>visitkort</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>index.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+    <style>
+        body{
+            font-family: Arial;
+            line-height: 1.5;
+        }
+        ::before,
+        ::after{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            max-width: 1170px;
+            margin: auto;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img{
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        .section-title{
+            /*background-color: blue;*/
+            padding: 0 15px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-title h2{
+            color: black;
+            font-size: 60px;
+            font-family: Arial;
+        }
+        .github-repository{
+            height: 60px;
+            width: 65px;
+            margin-top: -50px;
+            border-radius: 50%;
+            align-items: center;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .github-repository:hover{
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        [data-tooltip]::after{
+            position: absolute;
+            width: 75px;
+            height: 35px;
+            top: 250px;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 2px;
+            border-radius: 3px;
+            content: attr(data-tooltip);
+            color: white;
+            background: dimgrey;
+            font-size: 10px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        [data-tooltip]:hover::after{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /*Style for nettsiden*/
+        .team-section{
+            min-height: 100vh;
+            background-color: #EDC7B7;
+            padding: 80px 0;
+        }
+        .team-section .card{
+            width: calc((100% / 4) -30px);
+            margin: 0 15px 40px;
+            padding: 30px 0 0;
+            position: relative;
+        }
+        /*Effekten rundt bilder*/
+        .team-section .card-img{
+            width: 15rem;
+            height: 15rem;
+            margin: auto;
+            border-radius: 50%;
+            transition: box-shadow 0.3s ease;
+            border: 10px solid transparent;
+            top: 3.4rem;
+        }
+        .team-section .card:hover .card-img{
+            box-shadow: 0 0 10px black;
+        }
+        .team-section .card-img{
+            border-radius: 50%;
+        }
+        /*informasjon til visittkort*/
+        .team-section .card-info{
+            background-color: white;
+            padding: 20px 15px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            width: 100%;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .team-section .card:hover .card-info{
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.3s ease;
+        }
+        .team-section .card-info::before{
+            content: "";
+            position: absolute;
+            left: calc(50% - 20px);
+            top: 100%;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid white;
+        }
+        .team-section .card-info h3{
+            font-size: 20px;
+            color: deeppink;
+        }
+        .team-section .card-info p{
+            font-size: 16px;
+            color: deepskyblue;
+            margin: 0 0 10px;
+        }
+        .team-section .card-info .github-icon a{
+            display: inline-block;
+            margin: 3px;
+            padding: 5px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .team-section .card-info .github-icon a:hover{
+            box-shadow: 0 0 10px black;
+        }
+        .team-section .card-info .github-icon img{
+            width: 30px;
+            height: 30px;
+        }
+
+        /*Reponsive*/
+        @media (max-width: 991px) {
+            .team-section .card{
+                width: calc(50% - 30px);
+                background-color: white;
+                padding: 0 15px;
+            }
+            .team-section .card-info{
+                position: relative;
+                visibility: visible;
+                opacity: 1;
+                bottom: auto;
+                left: auto;
+            }
+            .team-section .card-img{
+                margin: 30px auto 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            .team-section .card:hover .card-img{
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            .team-section .card-info::before{
+                content: none;
+            }
+            .team-section .card-info{
+                padding: 20px 0 30px;
+            }
+        }
+        @media (max-width: 574px) {
+            .team-section .card{
+                width: calc(100% - 30px);
+            }
+
+    </style>
+
 </head>
-
 <body>
-<header class="navbar">
 
-
-    <a href="/Howweroll/how-we-roll.html" id="knapp" >REGISTRERING</a>
-    <a href="index.html" id="knapp1" >Visittkort</a>
-    <a href="/Howweroll/hwr-report.html" id="knapp2">Report</a>
-</header>
-<h1 class="visitkort">VISITKORT </h1>
-
-<div id="alle">
-
-
-    <a href="#" class="link">
-        <div class="karenanne" id="karenkort">
-
-            <img src="bilder/karen.png" width="150" alt="Karen Anderson's Profile Picture" id="karen" class="bilder">
-            <h2 class="navn" id="karen-navn">Karen Anderson</h2>
-            <p class="tekst" id="karen-tekst">
-                Studie: IT<br>
-                Kontakt: 977 77 777<br>
-            </p>
-
+<section class="team-section">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Gruppe 2B</h2>
+            <!--Repository til gruppen-->
+                <a data-tooltip="Repository til gruppe2B" href="https://github.com/karenan1811/Visitkortutarbeid"><img class="github-repository" src="bilder/githubicon2.png" alt="github"></a>
+            </div>
         </div>
-    </a>
-
-
-    <a href="#" class="link">
-        <div class="karenanne" id="anne">
-
-            <img src="bilder/anne.png" width="150" alt="Anne Ofstad's Profile Picture" id="karenbilde" class="bilder">
-            <h2 class="navn" id="anne-navn">Anne Ofstad</h2>
-            <p class="tekst" id="anne-tekst">
-                Studie: IKT<br>
-                Kontakt: 977 77 777<br>
-            </p>
-
+        <div class="row">
+            <!-- card start -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="bilder/karen.png" alt="Karen" />
+                </div>
+                <div class="card-info">
+                    <h3>Karen</h3>
+                    <p>Student</p>
+                    <div class="github-icon">
+                        <a href="https://github.com/karenan1811"><img src="bilder/githubicon.png" alt="github"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="bilder/anne.jpg" alt="Anne" />
+                </div>
+                <div class="card-info">
+                    <h3>Anne</h3>
+                    <p>IT Student</p>
+                    <div class="github-icon">
+                        <a href="https://github.com/AnneOfstad"><img src="bilder/githubicon.png" alt="Github"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="bilder/aleksander.png" alt="Aleksander"/>
+                </div>
+                <div class="card-info">
+                    <h3>Aleksander</h3>
+                    <p>Student</p>
+                    <div class="github-icon">
+                        <a href="https://github.com/AleksanderGm"><img src="bilder/githubicon.png" alt="Github"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- card end -->
+            <!-- card start -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="bilder/erling.png" alt="Erling"/>
+                </div>
+                <div class="card-info">
+                    <h3>Erling</h3>
+                    <p>Student</p>
+                    <div class="github-icon">
+                        <a href="https://github.com/ErlingV"><img src="bilder/githubicon.png" alt="Github"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- card end -->
         </div>
-    </a>
-
-
-    <a href="#" class="link">
-        <div class="erlingaleks" id="erling">
-
-            <img src="bilder/erling.png" width="150" alt="Erling Valen's Profile Picture" id="erlingbilde" class="bilder">
-            <h2 class="navn" id="erling-navn">Erling Valen</h2>
-            <p class="tekst" id="erling-tekst">
-                Studie: IKT<br>
-                Kontakt: 977 77 777<br>
-            </p>
-
-        </div>
-    </a>
-
-    <a href="#" class="link">
-        <div class="erlingaleks" id="alekskort">
-
-            <img src="bilder/aleksander.png" width="150" alt="Aleksander Grimstad Mo's Profile Picture" id="aleks" class="bilder">
-            <h2 class="navn" id="aleks-navn">Aleksander Grimstad Mo</h2>
-            <p class="tekst" id="aleks-tekst">
-                Studie: IKT<br>
-                Kontakt: 977 77 777<br>
-            </p>
-
-        </div>
-    </a>
-
-</div>
-
+    </div>
+</section>
 </body>
 </html>

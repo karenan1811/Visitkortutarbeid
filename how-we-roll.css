@@ -1,0 +1,89 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ede8e8;
+}
+
+/*Navigasjons bar start*/
+.knapp:link, a:visited
+{
+    background-color: #BAB2B5;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.knapp:hover, a:active
+{
+    background-color: Dimgray;
+}
+
+.navbar
+{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #033569;
+    flex-direction: column;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.3);
+    margin-bottom: 20px;
+}
+
+.links
+{
+    margin-right: auto;
+    margin-top: 26px;
+    margin-left: 30px;
+}
+/*Navigasjonsbar slutt*/
+/*Tables*/
+#myform, form{
+    margin-left: 30px;
+}
+
+
+.table{
+    width: 70%;
+}
+.ranges{
+    width: 100%;
+}
+.right{
+    text-align: right;
+}
+
+.margintable{
+    margin-top: 20px;
+}
+
+.divtables{
+    margin-top: 20px;
+}
+
+
+
+#tittel{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.gruppe{
+    margin-top: 20px;
+    font-size: 50px;
+    margin-right: auto;
+    margin-left: 30px;
+    color: #DC143C	;
+}
+#statistikk{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
