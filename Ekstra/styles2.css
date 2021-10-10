@@ -1,0 +1,62 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: #EDC7B7;
+    margin: 0;
+}
+
+#alle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kaea{
+    background-color: #BAB2B5;
+    width: 40%;
+    margin: 20px;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
+}
+
+.bilder{
+    border-radius: 50%;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.knapp:link, .knapp:visited {
+    background-color: #BAB2B5;
+    padding: 12px 15px;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #9B2335;
+    height: 150px;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
+}
+
+#navdiv{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.visittkort{
+    margin-left: 20px;
+}
