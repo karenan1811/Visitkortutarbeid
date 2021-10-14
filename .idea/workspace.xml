@@ -4,6 +4,10 @@
     <list default="true" id="176bba3c-b30b-4e91-87c6-7f0e3c165c3b" name="Changes" comment="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/hwr-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/hwr-report.html" afterDir="false" />
+>>>>>>> 44d92b2e7ad61fca2b112096855e755745fe170d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +63,13 @@
       <workItem from="1633877054017" duration="237000" />
       <workItem from="1633883797867" duration="1115000" />
       <workItem from="1633886728635" duration="1853000" />
+<<<<<<< HEAD
       <workItem from="1633890686060" duration="1860000" />
       <workItem from="1634199679816" duration="36000" />
       <workItem from="1634199919351" duration="620000" />
+=======
+      <workItem from="1633890686060" duration="2809000" />
+>>>>>>> 44d92b2e7ad61fca2b112096855e755745fe170d
     </task>
     <task id="LOCAL−00001" summary="new files">
       <created>1633456947894</created>
