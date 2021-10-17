@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="176bba3c-b30b-4e91-87c6-7f0e3c165c3b" name="Changes" comment="rapport endring" />
+    <list default="true" id="176bba3c-b30b-4e91-87c6-7f0e3c165c3b" name="Changes" comment="rapport endring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hwr-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/hwr-report.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +60,7 @@
       <workItem from="1633883797867" duration="1115000" />
       <workItem from="1633886728635" duration="1853000" />
       <workItem from="1633890686060" duration="2809000" />
+      <workItem from="1634468398501" duration="1687000" />
     </task>
     <task id="LOCAL−00001" summary="new files">
       <created>1633456947894</created>
@@ -88,7 +92,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1633713556356</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="rapport endring">
+      <created>1634464143856</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1634464143856</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
