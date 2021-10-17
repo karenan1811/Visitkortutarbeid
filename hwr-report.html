@@ -9,60 +9,243 @@
 
 <body>
 <header class="navbar">
-  <div class="padding">
-    <h2 class="gruppe">Gruppe 2B</h2>
-    <div class="links">
-      <a href="how-we-roll.html" class="knapp" >Registrering</a>
-      <a href="index.html" class="knapp" >Visittkort</a>
-      <a href="hwr-report.html" class="knapp">Report</a>
-    </div>
-  </div>
+  <a href="http://localhost:63342/Visitkortutarbeid/Howweroll/how-we-roll.html?_ijt=7t400o1nbv1edvqcotse099ojg" id="knapp" >REGISTRERING</a>
+  <a href="http://localhost:63342/Visitkortutarbeid/index.html?_ijt=ts5dat761vvrn11n83q04egc2p" id="knapp1" >Visittkort</a>
+  <a href="http://localhost:63342/Visitkortutarbeid/Howweroll/hwr-report.html?_ijt=8hdb6ru41vft1qsvc9qghs1c2v" id="knapp2">Report</a>
 </header>
-
+</header>
 <div class='results'>
-
-  <h3 id="statistikk">Statistisk Resultater</h3>
-            <table class="center">
-                <thead class="report-table">
-
-  <tr id="tr">
-    <th class="th">Rapport-Navn</th>
-    <th class="th">Elementer</th>
-    <th class="th">Gjennomsnitt</th>
-    <th class="th">Maximum Verdi</th>
-    <th class="th">Minimum Verdi</th>
-  </tr>
-                </thead>
-  <tbody class="report-table">
-  </tbody>
-</table></pre>
+  Her kommer resultat:<br>
+  <pre><center>Statistisk Resultater</center></pre>
 </div>
 <br>
 <br>
-<center><p>Når liker du å jobbe best?</p></center>
 
-<div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div>
 <br>
 <br>
-<center><p>Hvor mye liker du å jobbe?</p></center>
-<div id="chartDiv1" style="width:50%; height:300px; margin:0 auto;"></div>
+<hr>
+
+<center><Label for="tidspunkt"><h3>1. Når liker du å jobbe best?</h3></Label></center>
 <br>
 <br>
-<center><p>Hvordan liker du å jobbe?</p></center>
-<div id="chartDiv2" style="width:50%; height:300px; margin:0 auto;"></div>
+<table class="table">
+  <tbody>
+  <tr>
+    <td colspan="3">
+      <input type="range" min="1" max="100" value="50" class="ranges" id="tidspunkt" name="tidspunkt">
+    </td>
+  </tr>
+  <tr>
+    <td>Morgenfugl(0)</td>
+    <td></td>
+    <td class="right">Natteravn(100)</td>
+  </tr>
+  </tbody>
+</table>
+<div><center><canvas id="myCanvas"></canvas></center> </div>
+<div id="myLegend"></div>
 <br>
-<br>
-<center><p>Hvor liker du å jobbe?</p></center>
-<div id="chartDiv3" style="width:50%; height:300px; margin:0 auto;"></div>
-<br>
-<br>
-<center><p>Hvilken føler du passer deg best?</p></center>
-<div id="chartDiv4" style="width:50%; height:300px; margin:0 auto;"></div>
-<br>
+<hr>
 <br>
 
-</body>
+<center><Label for="jobbmengde"><h3>2. Hvor mye liker du å jobbe?</h3></Label></center>
+<br>
+<br>
+<table class="table">
+  <tbody>
+  <tr>
+    <td colspan="3">
+      <input type="range" min="1" max="100" value="50" class="ranges" name="jobbmengde" id="jobbmengde">
+    </td>
+  </tr>
+  <tr>
+    <td>Latsabb(0)</td>
+    <td></td>
+    <td class="right">Arbeidsmaniac(100)</td>
+  </tr>
+  </tbody>
+</table>
+<center><canvas id="myCanvas2"></canvas></center>
+<div id="myLegend2"></div>
+
+<br>
+<hr>
+<br>
+
+<center><Label for="jobbteknikk"><h3>3. Hvordan liker du å jobbe?</h3></Label></center>
+<br>
+<br>
+<table class="table">
+  <tbody>
+  <tr>
+    <td colspan="3">
+      <input type="range" min="1" max="100" value="50" class="ranges" name="jobbteknikk" id="jobbteknikk">
+    </td>
+  </tr>
+  <tr>
+    <td>Alene(0)</td>
+    <td></td>
+    <td class="right">Sammen(100)</td>
+  </tr>
+  </tbody>
+</table>
+<center><canvas id="myCanvas3"></canvas></center>
+<div id="myLegend3"></div>
+
+<br>
+<hr>
+<br>
+
+<center><Label for="jobbsted"><h3>4. Hvor liker du å jobbe?</h3></Label></center>
+<br>
+<br>
+<table class="table">
+  <tbody>
+  <tr>
+    <td colspan="3">
+      <input type="range" min="1" max="100" value="50" class="ranges" name="jobbsted" id="jobbsted">
+    </td>
+  </tr>
+  <tr>
+    <td>Hjemme(0)</td>
+    <td></td>
+    <td class="right">Skole(100)</td>
+  </tr>
+  </tbody>
+</table>
+<center><canvas id="myCanvas4"></canvas></center>
+<div id="myLegend4"></div>
+<br>
+<hr>
+<br>
+
+<center><Label for="arbeidsteknikk"><h3>5. Hvilken føler du passer deg best?</h3></Label></center>
+<br>
+<br>
+<table class="table">
+  <tbody>
+  <tr>
+    <td colspan="3">
+      <input type="range" min="1" max="100" class="ranges" name="arbeidsteknikk" id="arbeidsteknikk" value="50">
+    </td>
+  </tr>
+  <tr>
+    <td>Prate litt først(0)</td>
+    <td></td>
+    <td class="right">Gå rett på sak(100)</td>
+  </tr>
+  </tbody>
+</table>
+<center><canvas id="myCanvas5"></canvas></center>
+<div id="myLegend5"></div>
+</div>
+
 <script>
+
+  var myCanvas = document.getElementById("myCanvas");
+  myCanvas.width = 300;
+  myCanvas.height = 300;
+  var ctx = myCanvas.getContext("2d");
+
+  function drawLine(ctx, startX, startY, endX, endY){
+    ctx.beginPath();
+    ctx.moveTo(startX,startY);
+    ctx.lineTo(endX,endY);
+    ctx.stroke();
+  }
+
+  function drawArc(ctx, centerX, centerY, radius, startAngle, endAngle){
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+    ctx.stroke();
+  }
+
+  function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color ){
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.moveTo(centerX,centerY);
+    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  var Piechart = function(options){
+    this.options = options;
+    this.canvas = options.canvas;
+    this.ctx = this.canvas.getContext("2d");
+    this.colors = options.colors;
+
+    this.draw = function(){
+      var total_value = 0;
+      var color_index = 0;
+      for (var categ in this.options.data){
+        var val = this.options.data[categ];
+        total_value += val;
+      }
+
+      var start_angle = 0;
+      for (categ in this.options.data){
+        val = this.options.data[categ];
+        var slice_angle = 2 * Math.PI * val / total_value;
+
+        drawPieSlice(
+                this.ctx,
+                this.canvas.width/2,
+                this.canvas.height/2,
+                Math.min(this.canvas.width/2,this.canvas.height/2),
+                start_angle,
+                start_angle+slice_angle,
+                this.colors[color_index%this.colors.length]
+        );
+
+        start_angle += slice_angle;
+        color_index++;
+      }
+
+      //drawing a white circle over the chart
+      //to create the doughnut chart
+      if (this.options.doughnutHoleSize){
+        drawPieSlice(
+                this.ctx,
+                this.canvas.width/2,
+                this.canvas.height/2,
+                this.options.doughnutHoleSize * Math.min(this.canvas.width/2,this.canvas.height/2),
+                0,
+                2 * Math.PI,
+                "#ff0000"
+        );
+      }
+      start_angle = 0;
+      for (categ in this.options.data){
+        val = this.options.data[categ];
+        slice_angle = 2 * Math.PI * val / total_value;
+        var pieRadius = Math.min(this.canvas.width/2,this.canvas.height/2);
+        var labelX = this.canvas.width/2 + (pieRadius / 2) * Math.cos(start_angle + slice_angle/2);
+        var labelY = this.canvas.height/2 + (pieRadius / 2) * Math.sin(start_angle + slice_angle/2);
+
+        if (this.options.doughnutHoleSize){
+          var offset = (pieRadius * this.options.doughnutHoleSize ) / 2;
+          labelX = this.canvas.width/2 + (offset + pieRadius / 2) * Math.cos(start_angle + slice_angle/2);
+          labelY = this.canvas.height/2 + (offset + pieRadius / 2) * Math.sin(start_angle + slice_angle/2);
+        }
+
+        var labelText = Math.round(100 * val / total_value);
+        this.ctx.fillStyle = "white";
+        this.ctx.font = "bold 20px Arial";
+        this.ctx.fillText(labelText+"%", labelX,labelY);
+        start_angle += slice_angle;
+      }
+      if (this.options.legend){
+        color_index = 0;
+        var legendHTML = "";
+        for (categ in this.options.data){
+          legendHTML += "<div><span style='display:inline-block;width:20px;background-color:"+this.colors[color_index++]+";'>&nbsp;</span> "+categ+"</div>";
+        }
+        this.options.legend.innerHTML = legendHTML;
+      }
+
+    }
+  }
   Promise.all([
     fetch('https://bacit.info/hwr/20211007222630-d1ec038b1d2a2589c06e37e4a3057c0a.json').then(response => response.json()), //Karen
     fetch('https://bacit.info/hwr/20211007222801-738b01c08a4831480969d4fee2a40b90.json').then(response => response.json()), //Anne
@@ -77,128 +260,79 @@
             const erling = data[2];
             const aleksander = data[3];
 
-            const hours = [Number(data[0].tidspunkt),Number(data[1].tidspunkt),Number(data[2].tidspunkt),Number(data[3].tidspunkt)];
-            const jobbmengder = [Number(data[0].jobbmengde),Number(data[1].jobbmengde),Number(data[2].jobbmengde),Number(data[3].jobbmengde)];
-            const jobbteknikker = [Number(data[0].jobbteknikk),Number(data[1].jobbteknikk),Number(data[2].jobbteknikk),Number(data[3].jobbteknikk)];
-            const jobbsteder = [Number(data[0].jobbsted),Number(data[1].jobbsted),Number(data[2].jobbsted),Number(data[3].jobbsted)];
-            const arbeidsteknikker = [Number(data[0].arbeidsteknikk),Number(data[1].arbeidsteknikk),Number(data[2].arbeidsteknikk),Number(data[3].arbeidsteknikk)];
-            const results = document.querySelector('.results pre');
-            const totalData = {time:hours, worklength:jobbmengder, jobtechnic:jobbteknikker,workplace:jobbsteder,worktechnic:arbeidsteknikker};
-            console.log(totalData);
-            let table = document.querySelector(".center");
+            const hours = {"Karen":Number(data[0].tidspunkt),"Anne":Number(data[1].tidspunkt),"Erling":Number(data[2].tidspunkt),"Aleksander":Number(data[3].tidspunkt)};
+            console.log(hours);
+            const jobbmengder = {"Karen":Number(data[0].jobbmengde),"Anne":Number(data[1].jobbmengde),"Erling":Number(data[2].jobbmengde),"Aleksander":Number(data[3].jobbmengde)};
+            console.log(jobbmengder);
+            const jobbteknikker = {"Karen":Number(data[0].jobbteknikk),"Anne":Number(data[1].jobbteknikk),"Erling":Number(data[2].jobbteknikk),"Aleksander":Number(data[3].jobbteknikk)};
+            console.log(jobbteknikker);
+            const jobbsteder = {"Karen":Number(data[0].jobbsted),"Anne":Number(data[1].jobbsted),"Erling":Number(data[2].jobbsted),"Aleksander":Number(data[3].jobbsted)};
+            console.log(jobbsteder);
+            const arbeidsteknikker = {"Karen":Number(data[0].arbeidsteknikk),"Anne":Number(data[1].arbeidsteknikk),"Erling":Number(data[2].arbeidsteknikk),"Aleksander":Number(data[3].arbeidsteknikk)};
+            console.log(arbeidsteknikker);
 
-            let tr = table.insertRow();
-            tr.insertCell(0).innerHTML = "Når liker du å jobbe best?";
-            tr.insertCell(1).innerHTML = totalData.time;
-            tr.insertCell(2).innerHTML = findAverage(totalData.time);
-            tr.insertCell(3).innerHTML = Math.max.apply(0,totalData.time);
-            tr.insertCell(4).innerHTML = Math.min.apply(0,totalData.time);
-            let tr1 = table.insertRow();
-            tr1.insertCell(0).innerHTML = "Hvor mye liker du å jobbe?";
-            tr1.insertCell(1).innerHTML = totalData.worklength;
-            tr1.insertCell(2).innerHTML = findAverage(totalData.worklength);
-            tr1.insertCell(3).innerHTML = Math.max.apply(0,totalData.worklength);
-            tr1.insertCell(4).innerHTML = Math.min.apply(0,totalData.worklength);
-            let tr2 = table.insertRow();
-            tr2.insertCell(0).innerHTML = "Hvordan liker du å jobbe?";
-            tr2.insertCell(1).innerHTML = totalData.jobtechnic;
-            tr2.insertCell(2).innerHTML = findAverage(totalData.jobtechnic);
-            tr2.insertCell(3).innerHTML = Math.max.apply(0,totalData.jobtechnic);
-            tr2.insertCell(4).innerHTML = Math.min.apply(0,totalData.jobtechnic);
+            // Draw First Chart:
+            const myLegend = document.getElementById("myLegend");
+            const myPiechart = new Piechart(
+                    {
+                      canvas: myCanvas,
+                      data: hours,
+                      colors: ["#3F0713", "#B24080", "#ECAC5D", "#FF0000"],
+                      legend: myLegend
+                    }
+            );
+            myPiechart.draw();
 
-            let tr3 = table.insertRow();
-            tr3.insertCell(0).innerHTML = "Hvor liker du å jobbe?";
-            tr3.insertCell(1).innerHTML = totalData.workplace;
-            tr3.insertCell(2).innerHTML = findAverage(totalData.workplace);
-            tr3.insertCell(3).innerHTML = Math.max.apply(0,totalData.workplace);
-            tr3.insertCell(4).innerHTML = Math.min.apply(0,totalData.workplace);
-            let tr4 = table.insertRow();
-            tr4.insertCell(0).innerHTML = "Hvilken føler du passer deg best?";
-            tr4.insertCell(1).innerHTML = totalData.worktechnic;
-            tr4.insertCell(2).innerHTML = findAverage(totalData.worktechnic);
-            tr4.insertCell(3).innerHTML = Math.max.apply(0,totalData.worktechnic);
-            tr4.insertCell(4).innerHTML = Math.min.apply(0,totalData.worktechnic);
+            // Draw Second Chart:
+            const myLegend2 = document.getElementById("myLegend2");
+            const myPiechart2 = new Piechart(
+                    {
+                      canvas:myCanvas2,
+                      data:jobbmengder,
+                      colors:["#E02401","#AB6D23", "#F78812","#51050F"],
+                      legend:myLegend2
+                    }
+            );
+            myPiechart2.draw();
 
-            JSC.Chart('chartDiv', {
-              type: 'horizontal column',
-              series: [
-                {
-                  points: [
-                    {x: 'Karen', y: Number(data[0].tidspunkt)},
-                    {x: 'Anne', y: Number(data[1].tidspunkt)},
-                    {x: 'Erling', y: Number(data[2].tidspunkt)},
-                    {x: 'Aleksander', y: Number(data[3].tidspunkt)}
-                  ]
-                }
-              ]
-            });
-            JSC.Chart('chartDiv1', {
-              type: 'horizontal column',
-              series: [
-                {
-                  points: [
-                    {x: 'Karen', y: Number(data[0].jobbmengde)},
-                    {x: 'Anne', y: Number(data[1].jobbmengde)},
-                    {x: 'Erling', y: Number(data[2].jobbmengde)},
-                    {x: 'Aleksander', y: Number(data[3].jobbmengde)}
-                  ]
-                }
-              ]
-            });
-            JSC.Chart('chartDiv2', {
-              type: 'horizontal column',
-              series: [
-                {
-                  points: [
-                    {x: 'Karen', y: Number(data[0].jobbteknikk)},
-                    {x: 'Anne', y: Number(data[1].jobbteknikk)},
-                    {x: 'Erling', y: Number(data[2].jobbteknikk)},
-                    {x: 'Aleksander', y: Number(data[3].jobbteknikk)}
-                  ]
-                }
-              ]
-            });
-            JSC.Chart('chartDiv3', {
-              type: 'horizontal column',
-              series: [
-                {
-                  points: [
-                    {x: 'Karen', y: Number(data[0].jobbsted)},
-                    {x: 'Anne', y: Number(data[1].jobbsted)},
-                    {x: 'Erling', y: Number(data[2].jobbsted)},
-                    {x: 'Aleksander', y: Number(data[3].jobbsted)}
-                  ]
-                }
-              ]
-            });
-            JSC.Chart('chartDiv4', {
-              type: 'horizontal column',
-              series: [
-                {
-                  points: [
-                    {x: 'Karen', y: Number(data[0].arbeidsteknikk)},
-                    {x: 'Anne', y: Number(data[1].arbeidsteknikk)},
-                    {x: 'Erling', y: Number(data[2].arbeidsteknikk)},
-                    {x: 'Aleksander', y: Number(data[3].arbeidsteknikk)}
-                  ]
-                }
-              ]
-            });
+            // Draw Third Chart:
+            var myLegend3 = document.getElementById("myLegend3");
+            var myPiechart3 = new Piechart(
+                    {
+                      canvas:myCanvas3,
+                      data:jobbteknikker,
+                      colors:["#72147E","#F21170", "#FA9905","#FF5200"],
+                      legend:myLegend3
+                    }
+            );
+            myPiechart3.draw();
+
+            // Draw Fourth Chart:
+            var myLegend4 = document.getElementById("myLegend4");
+            var myPiechart4 = new Piechart(
+                    {
+                      canvas:myCanvas4,
+                      data:jobbsteder,
+                      colors:["#9EDE73","#F7EA00", "#E48900","#BE0000"],
+                      legend:myLegend4
+                    }
+            );
+            myPiechart4.draw();
+
+            // Draw Last Chart:
+            var myLegend5 = document.getElementById("myLegend5");
+            var myPiechart5 = new Piechart(
+                    {
+                      canvas:myCanvas5,
+                      data:arbeidsteknikker,
+                      colors:["#E43F5A","#007965", "#EC0101","#535204"],
+                      legend:myLegend5
+                    }
+            );
+            myPiechart5.draw();
+
+
           });
-  function findAverage(arr) {
-    let total = 0;
-    for (let i = 0; i < arr.length; i++) {
-      total += arr[i] ;
-    }
-    return total/ arr.length
-  }
-
 </script>
-<script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
-
-</body>
-</html>
-
-
 </body>
 </html>
