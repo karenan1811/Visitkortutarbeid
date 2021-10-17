@@ -1,0 +1,1140 @@
+Index: Howweroll/how-we-roll.css
+===================================================================
+diff --git a/Howweroll/how-we-roll.css b/Howweroll/how-we-roll.css
+deleted file mode 100644
+--- a/Howweroll/how-we-roll.css	(revision 4eaa5b7b2cb9cfb62a165a23ef8ea3b5c371c9d1)
++++ /dev/null	(revision 4eaa5b7b2cb9cfb62a165a23ef8ea3b5c371c9d1)
+@@ -1,165 +0,0 @@
+-*, *::before, *::after{
+-    box-sizing: border-box;
+-    font-family: sans-serif;
+-    margin: 0;
+-    padding: 0;
+-}
+-body {
+-    background-color: #EDC7B7;
+-}
+-/*Generelt for hele nettsiden*/
+-
+-.visitkort {
+-    width: 100%;
+-    display: flex;
+-    justify-content: center;
+-    align-items: center;
+-}
+-
+-#knapp:link, a:visited
+-{
+-    background-color: #BAB2B5;
+-    color: black;
+-    padding: 14px 25px;
+-    text-align: center;
+-    text-decoration: none;
+-    display: inline-block;
+-
+-}
+-/*Knapp, navbar*/
+-#knapp1:link, a:visited
+-{
+-    background-color: #BAB2B5;
+-    color: black;
+-    padding: 14px 25px;
+-    text-align: center;
+-    text-decoration: none;
+-    display: inline-block;
+-
+-}
+-#knapp2:link, a:visited
+-{
+-    background-color: #BAB2B5;
+-    color: black;
+-    padding: 14px 25px;
+-    text-align: center;
+-    text-decoration: none;
+-    display: inline-block;
+-
+-}
+-#knapp1:hover, a:active {
+-    background-color: Dimgray;
+-}
+-#knapp2:hover, a:active {
+-    background-color: Dimgray;
+-}
+-/*Tables*/
+-
+-.table{
+-    width: 70%;
+-    margin-bottom: 5%;
+-}
+-.ranges{
+-    width: 100%;
+-}
+-.right{
+-    text-align: right;
+-}
+-.headerforhow{
+-    margin-bottom: 5%;
+-}
+-input{
+-    width:60%;
+-    height:30%;
+-    margin-bottom: 5%;
+-}
+-/*Tables*/
+-
+-table.center {
+-    background-color: #BAB2B5;
+-    margin-left: auto;
+-    margin-right: auto;
+-}
+-*, *::before, *::after{
+-    box-sizing: border-box;
+-    font-family: sans-serif;
+-    margin: 0;
+-    padding: 0;
+-}
+-body {
+-    background-color: #EDC7B7;
+-}
+-/*Generelt for hele nettsiden*/
+-
+-.visitkort {
+-    width: 100%;
+-    display: flex;
+-    justify-content: center;
+-    align-items: center;
+-}
+-
+-#knapp:link, a:visited
+-{
+-    background-color: #BAB2B5;
+-    color: black;
+-    padding: 14px 25px;
+-    text-align: center;
+-    text-decoration: none;
+-    display: inline-block;
+-
+-}
+-/*Knapp, navbar*/
+-#knapp1:link, a:visited
+-{
+-    background-color: #BAB2B5;
+-    color: black;
+-    padding: 14px 25px;
+-    text-align: center;
+-    text-decoration: none;
+-    display: inline-block;
+-
+-}
+-#knapp2:link, a:visited
+-{
+-    background-color: #BAB2B5;
+-    color: black;
+-    padding: 14px 25px;
+-    text-align: center;
+-    text-decoration: none;
+-    display: inline-block;
+-
+-}
+-#knapp1:hover, a:active {
+-    background-color: Dimgray;
+-}
+-#knapp2:hover, a:active {
+-    background-color: Dimgray;
+-}
+-/*Tables*/
+-
+-.table{
+-    width: 70%;
+-    margin-bottom: 5%;
+-}
+-.ranges{
+-    width: 100%;
+-}
+-.right{
+-    text-align: right;
+-}
+-.headerforhow{
+-    margin-bottom: 5%;
+-}
+-input{
+-    width:60%;
+-    height:30%;
+-    margin-bottom: 5%;
+-}
+-#message{
+-    margin-bottom:5%;
+-}
+-/*Tables*/
+-
+-.resultat-table{
+-
+-}
+Index: how-we-roll.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/how-we-roll.css b/how-we-roll.css
+new file mode 100644
+--- /dev/null	(date 1633885951523)
++++ b/how-we-roll.css	(date 1633885951523)
+@@ -0,0 +1,84 @@
++*, *::before, *::after{
++    box-sizing: border-box;
++    font-family: sans-serif;
++    margin: 0;
++    padding: 0;
++}
++
++body {
++    background-color: #ede8e8;
++}
++
++/*Generelt for hele nettsiden*/
++
++.knapp:link, a:visited {
++    background-color: #BAB2B5;
++    color: black;
++    padding: 14px 25px;
++    text-align: center;
++    text-decoration: none;
++    display: inline-block;
++}
++
++.knapp:hover, a:active {
++    background-color: Dimgray;
++}
++
++/*Tables*/
++#myform, form{
++    margin-left: 30px;
++}
++
++
++.table{
++    width: 70%;
++}
++.ranges{
++    width: 100%;
++}
++.right{
++    text-align: right;
++}
++
++.margintable{
++    margin-top: 20px;
++}
++
++.divtables{
++    margin-top: 20px;
++}
++
++.navbar{
++    display: flex;
++    width: 100%;
++    height: 150px;
++    background-color: #033569;
++    flex-direction: column;
++    box-shadow: 0 6px 15px rgb(0 0 0 / 0.3);
++    margin-bottom: 20px;
++}
++
++.links{
++    margin-right: auto;
++    margin-top: 26px;
++    margin-left: 30px;
++}
++
++#tittel{
++    width: 100%;
++    margin-bottom: 20px;
++    margin-left: 30px;
++}
++.gruppe{
++    margin-top: 20px;
++    font-size: 50px;
++    margin-right: auto;
++    margin-left: 30px;
++    color: #DC143C	;
++}
++#statistikk{
++    margin-top: 20px;
++    margin-bottom: 20px;
++    margin-left: 30px;
++}
++
+Index: styles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>*, *::before, *::after{\r\n  margin: 20px;\r\n  box-sizing: border-box;\r\n  font-family: sans-serif;\r\n}\r\nbody {\r\n  background-color: #EDC7B7;\r\n}\r\n\r\n\r\n/*Visittkort*/\r\n.visitkort{\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n#alle{\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  grid-column-gap: 30px;\r\n  grid-row-gap: -10px;\r\n}\r\n\r\n\r\n.bilder{\r\n  border-radius: 50%;\r\n  box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);\r\n}\r\n\r\n.karenanne{\r\n  display:grid;\r\n  width: 100%;\r\n  background-color:#BAB2B5;\r\n  max-width: 600px;\r\n  box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);\r\n}\r\n\r\n.erlingaleks{\r\n  display:grid;\r\n  width: 100%;\r\n  background-color: #BAB2B5;\r\n  max-width: 600px;\r\n  box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);\r\n}\r\n\r\n.navn{\r\n  grid-row: 1/4;\r\n  grid-column: 3/5;\r\n}\r\n/*Visittkort*/\r\n\r\n\r\n/*Links-Visittkort*/\r\n.tekst{\r\n  grid-column: 1/4;\r\n  grid-row: 2/6;\r\n}\r\n\r\n.link:link{\r\n  text-decoration: none;\r\n  color: black;\r\n}\r\n\r\n.link:hover{\r\n  background: linear-gradient(#A8A7A7, #CC527A, #E8175D, #474747, #363636);\r\n  background-size: 5px;\r\n  box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);\r\n  transform: scale(1.04);\r\n  opacity: 1;\r\n}\r\n\r\n.link:active{\r\n}\r\n/*Links-Visittkort*/\r\n\r\n#knapp:link, a:visited\r\n{\r\n  background-color: #BAB2B5;\r\n  color: black;\r\n  padding: 14px 25px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n\r\n}\r\n/*Knapp, navbar*/\r\n#knapp1:link, a:visited\r\n{\r\n  background-color: #BAB2B5;\r\n  color: black;\r\n  padding: 14px 25px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n\r\n}\r\n#knapp2:link, a:visited\r\n{\r\n  background-color: #BAB2B5;\r\n  color: black;\r\n  padding: 14px 25px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n\r\n}\r\n#knapp1:hover, a:active {\r\n  background-color: Dimgray;\r\n}\r\n#knapp2:hover, a:active {\r\n  background-color: Dimgray;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/styles.css b/styles.css
+--- a/styles.css	(revision 4eaa5b7b2cb9cfb62a165a23ef8ea3b5c371c9d1)
++++ b/styles.css	(date 1633885951533)
+@@ -1,28 +1,44 @@
+ *, *::before, *::after{
+-  margin: 20px;
+   box-sizing: border-box;
+   font-family: sans-serif;
+ }
+ body {
+   background-color: #EDC7B7;
++  margin: 0;
+ }
+ 
+ 
+-/*Visittkort*/
++/*navbar*/
+ .visitkort{
+-  width: 100%;
++ margin-right: auto;
++  margin-left: 20px;
++}
++
++.knapp{
++  margin-left: auto;
++}
++
++.navbar{
+   display: flex;
+-  justify-content: center;
++  width: 100%;
++  background-color: #001f3f;
+   align-items: center;
+ }
+ 
++
+ #alle{
+-  display: grid;
++  /*display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 30px;
+   grid-row-gap: -10px;
++   */
++  display: flex;
++  justify-content: space-between;
++  align-items: center;
++  width: 100%;
++  flex-wrap: wrap;
++  margin: 20px;
+ }
+-
+ 
+ .bilder{
+   border-radius: 50%;
+@@ -33,6 +49,7 @@
+   display:grid;
+   width: 100%;
+   background-color:#BAB2B5;
++  min-width: 600px;
+   max-width: 600px;
+   box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
+ }
+@@ -75,40 +92,16 @@
+ }
+ /*Links-Visittkort*/
+ 
+-#knapp:link, a:visited
+-{
++.knapp:link, a:visited {
+   background-color: #BAB2B5;
+   color: black;
+   padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+-
+ }
+-/*Knapp, navbar*/
+-#knapp1:link, a:visited
+-{
+-  background-color: #BAB2B5;
+-  color: black;
+-  padding: 14px 25px;
+-  text-align: center;
+-  text-decoration: none;
+-  display: inline-block;
+ 
+-}
+-#knapp2:link, a:visited
+-{
+-  background-color: #BAB2B5;
+-  color: black;
+-  padding: 14px 25px;
+-  text-align: center;
+-  text-decoration: none;
+-  display: inline-block;
+-
+-}
+-#knapp1:hover, a:active {
+-  background-color: Dimgray;
+-}
+-#knapp2:hover, a:active {
++.knapp:hover, a:active {
+   background-color: Dimgray;
+-}
+\ No newline at end of file
++}
++
+Index: Ekstra/styles2.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Ekstra/styles2.css b/Ekstra/styles2.css
+new file mode 100644
+--- /dev/null	(date 1633885951503)
++++ b/Ekstra/styles2.css	(date 1633885951503)
+@@ -0,0 +1,62 @@
++*, *::before, *::after{
++    box-sizing: border-box;
++    font-family: sans-serif;
++}
++body {
++    background-color: #EDC7B7;
++    margin: 0;
++}
++
++#alle{
++    display: flex;
++    justify-content: center;
++    align-items: center;
++    flex-wrap: wrap;
++}
++
++.kaea{
++    background-color: #BAB2B5;
++    width: 40%;
++    margin: 20px;
++    box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
++}
++
++.bilder{
++    border-radius: 50%;
++    box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
++}
++
++a{
++    text-decoration: none;
++    color: black;
++}
++
++.knapp:link, .knapp:visited {
++    background-color: #BAB2B5;
++    padding: 12px 15px;
++    text-align: center;
++    display: inline-block;
++    justify-content: center;
++    align-items: center;
++    width: 160px;
++    height: 60px;
++    margin-top: 5px;
++    margin-bottom: 5px;
++}
++
++header{
++    display: flex;
++    align-items: center;
++    background-color: #033569;
++    height: 150px;
++    box-shadow: 0 3px 15px rgb(0 0 0 / 0.3);
++}
++
++#navdiv{
++    margin-left: auto;
++    margin-right: 20px;
++}
++
++.visittkort{
++    margin-left: 20px;
++}
+\ No newline at end of file
+Index: Howweroll/hwr-report.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Howweroll/hwr-report.html b/hwr-report.html
+rename from Howweroll/hwr-report.html
+rename to hwr-report.html
+--- a/Howweroll/hwr-report.html	(revision 4eaa5b7b2cb9cfb62a165a23ef8ea3b5c371c9d1)
++++ b/hwr-report.html	(date 1633885951552)
+@@ -9,22 +9,28 @@
+ 
+ <body>
+ <header class="navbar">
+-  <a href="how-we-roll.html" id="knapp" >REGISTRERING</a>
+-  <a href="../index.html" id="knapp1" >Visittkort</a>
+-  <a href="hwr-report.html" id="knapp2">Report</a>
++  <div class="padding">
++    <h2 class="gruppe">Gruppe 2B</h2>
++    <div class="links">
++      <a href="how-we-roll.html" class="knapp" >REGISTRERING</a>
++      <a href="index.html" class="knapp" >Visittkort</a>
++      <a href="hwr-report.html" class="knapp">Report</a>
++    </div>
++  </div>
+ </header>
+-</header>
++
+ <div class='results'>
+-  Her kommer resultat:<br>
+-  <pre><center>Statistisk Resultater</center>
++
++  <h3 id="statistikk">Statistisk Resultater</h3>
+             <table class="center">
+                 <thead class="report-table">
+-  <tr>
+-    <th>Report-Navn</th>
+-    <th>Elementer</th>
+-      <th>Gjennomsnitt</th>
+-    <th>Maximum Verdi</th>
+-      <th>Minimum Verdi</th>
++
++  <tr id="tr">
++    <th class="th">Report-Navn</th>
++    <th class="th">Elementer</th>
++    <th class="th">Gjennomsnitt</th>
++    <th class="th">Maximum Verdi</th>
++    <th class="th">Minimum Verdi</th>
+   </tr>
+                 </thead>
+   <tbody class="report-table">
+Index: Howweroll/how-we-roll.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Howweroll/how-we-roll.html b/how-we-roll.html
+rename from Howweroll/how-we-roll.html
+rename to how-we-roll.html
+--- a/Howweroll/how-we-roll.html	(revision 4eaa5b7b2cb9cfb62a165a23ef8ea3b5c371c9d1)
++++ b/how-we-roll.html	(date 1633885951552)
+@@ -2,20 +2,22 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+-    <title>Registreing</title>
+-
++    <title>Gruppe 2B HWR</title>
+     <link rel="stylesheet" href="how-we-roll.css">
+     <meta name=viewport content="width=device-width, initial-scale=1">
+ <body>
+ <header class="navbar">
+-
+-    <a href="how-we-roll.html" id="knapp" >REGISTRERING</a>
+-    <a href="../index.html" id="knapp1" >Visittkort</a>
+-    <a href="hwr-report.html" id="knapp2">Report</a>
++    <div class="padding">
++        <h2 class="gruppe">Gruppe 2B</h2>
++        <div class="links">
++            <a href="how-we-roll.html" class="knapp" >REGISTRERING</a>
++            <a href="index.html" class="knapp" >Visittkort</a>
++            <a href="hwr-report.html" class="knapp">Report</a>
++        </div>
++    </div>
+ </header>
+ 
+-<center><h2 class="headerforhow">Registrering for How we Roll</h2></center>
+-
++<h1 id="tittel">Spørreundersøkelse</h1>
+ <form id="myform">
+     <table class="table">
+         <tr>
+@@ -30,7 +32,7 @@
+         </tr>
+         <tr>
+             <td>
+-                <label for="contact">Contact</label><br>
++                <label for="contact">Nummer:</label><br>
+                 <input type="text" placeholder="Contact" id="contact" name="contact"><br>
+             </td>
+             <td>
+@@ -40,13 +42,13 @@
+         </tr>
+     </table>
+ 
+-    <h4>Message</h4>
+-
+-    <textarea name="message" id="message" placeholder="Your message" rows="10" cols="30"></textarea><br>
++    <h4>Dine ferdigheter:</h4>
++    <label for="message"></label>
++    <textarea name="message" id="message" placeholder="" rows="5" cols="50"></textarea><br>
+ 
+     <div class="divtables">
+ 
+-        <Label for="tidspunkt"><h3>Når liker du å jobbe best?</h3></Label>
++        <Label for="tidspunkt"><h3 class="margintable">Når liker du å jobbe best?</h3></Label>
+         <table class="table">
+             <tbody>
+             <tr>
+@@ -63,7 +65,7 @@
+         </table>
+ 
+ 
+-        <Label for="jobbmengde"><h3>Hvor mye liker du å jobbe?</h3></Label>
++        <Label for="jobbmengde"><h3 class="margintable">Hvor mye liker du å jobbe?</h3></Label>
+         <table class="table">
+             <tbody>
+             <tr>
+@@ -80,7 +82,7 @@
+         </table>
+ 
+ 
+-        <Label for="jobbteknikk"><h3>Hvordan liker du å jobbe?</h3></Label>
++        <Label for="jobbteknikk"><h3 class="margintable">Hvordan liker du å jobbe?</h3></Label>
+         <table class="table">
+             <tbody>
+             <tr>
+@@ -97,7 +99,7 @@
+         </table>
+ 
+ 
+-        <Label for="jobbsted"><h3>Hvor liker du å jobbe?</h3></Label>
++        <Label for="jobbsted"><h3 class="margintable">Hvor liker du å jobbe?</h3></Label>
+         <table class="table">
+             <tbody>
+             <tr>
+@@ -114,7 +116,7 @@
+         </table>
+ 
+ 
+-        <Label for="arbeidsteknikk"><h3>Hvilken føler du passer deg best?</h3></Label>
++        <Label for="arbeidsteknikk"><h3 class="margintable">Hvilken føler du passer deg best?</h3></Label>
+         <table class="table">
+             <tbody>
+             <tr>
+@@ -138,12 +140,11 @@
+         <button class="btn submit" type="submit" onclick="setTimeout(function() { window.scrollTo(0,document.body.scrollHeight) }, 750)">
+             Submit
+         </button>
+-    </div>
+ 
+ </form>
+-<div class='results'>
+-    Her kommer resultat:<br>
+-    <pre></pre>
++    <div class='results'>
++        Her kommer resultat:<br>
++    </div>
+ </div>
+ <script> async function postData(url = '', data = {}) {
+     // Default options are marked with *
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"nb\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>visitkort</title>\r\n    <link rel=\"stylesheet\" href=\"styles.css\">\r\n    <meta name=viewport content=\"width=device-width, initial-scale=1\">\r\n</head>\r\n\r\n<body>\r\n<header class=\"navbar\">\r\n\r\n\r\n    <a href=\"/Howweroll/how-we-roll.html\" id=\"knapp\" >REGISTRERING</a>\r\n    <a href=\"index.html\" id=\"knapp1\" >Visittkort</a>\r\n    <a href=\"/Howweroll/hwr-report.html\" id=\"knapp2\">Report</a>\r\n</header>\r\n<h1 class=\"visitkort\">VISITKORT </h1>\r\n\r\n<div id=\"alle\">\r\n\r\n\r\n    <a href=\"#\" class=\"link\">\r\n        <div class=\"karenanne\" id=\"karenkort\">\r\n\r\n            <img src=\"bilder/karen.png\" width=\"150\" alt=\"Karen Anderson's Profile Picture\" id=\"karen\" class=\"bilder\">\r\n            <h2 class=\"navn\" id=\"karen-navn\">Karen Anderson</h2>\r\n            <p class=\"tekst\" id=\"karen-tekst\">\r\n                Studie: IT<br>\r\n                Kontakt: 977 77 777<br>\r\n            </p>\r\n\r\n        </div>\r\n    </a>\r\n\r\n\r\n    <a href=\"#\" class=\"link\">\r\n        <div class=\"karenanne\" id=\"anne\">\r\n\r\n            <img src=\"bilder/anne.png\" width=\"150\" alt=\"Anne Ofstad's Profile Picture\" id=\"karenbilde\" class=\"bilder\">\r\n            <h2 class=\"navn\" id=\"anne-navn\">Anne Ofstad</h2>\r\n            <p class=\"tekst\" id=\"anne-tekst\">\r\n                Studie: IKT<br>\r\n                Kontakt: 977 77 777<br>\r\n            </p>\r\n\r\n        </div>\r\n    </a>\r\n\r\n\r\n    <a href=\"#\" class=\"link\">\r\n        <div class=\"erlingaleks\" id=\"erling\">\r\n\r\n            <img src=\"bilder/erling.png\" width=\"150\" alt=\"Erling Valen's Profile Picture\" id=\"erlingbilde\" class=\"bilder\">\r\n            <h2 class=\"navn\" id=\"erling-navn\">Erling Valen</h2>\r\n            <p class=\"tekst\" id=\"erling-tekst\">\r\n                Studie: IKT<br>\r\n                Kontakt: 977 77 777<br>\r\n            </p>\r\n\r\n        </div>\r\n    </a>\r\n\r\n    <a href=\"#\" class=\"link\">\r\n        <div class=\"erlingaleks\" id=\"alekskort\">\r\n\r\n            <img src=\"bilder/aleksander.png\" width=\"150\" alt=\"Aleksander Grimstad Mo's Profile Picture\" id=\"aleks\" class=\"bilder\">\r\n            <h2 class=\"navn\" id=\"aleks-navn\">Aleksander Grimstad Mo</h2>\r\n            <p class=\"tekst\" id=\"aleks-tekst\">\r\n                Studie: IKT<br>\r\n                Kontakt: 977 77 777<br>\r\n            </p>\r\n\r\n        </div>\r\n    </a>\r\n\r\n</div>\r\n\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 4eaa5b7b2cb9cfb62a165a23ef8ea3b5c371c9d1)
++++ b/index.html	(date 1633885951533)
+@@ -1,81 +1,264 @@
+ <!DOCTYPE html>
+-<html lang="nb">
+-
++<html lang="en">
+ <head>
+-    <meta charset="UTF-8">
+-    <title>visitkort</title>
+-    <link rel="stylesheet" href="styles.css">
+-    <meta name=viewport content="width=device-width, initial-scale=1">
++    <meta charset="UTF-8" />
++    <title>index.html</title>
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
++    <style>
++        body{
++            font-family: Arial;
++            line-height: 1.5;
++        }
++        ::before,
++        ::after{
++            box-sizing: border-box;
++            margin: 0;
++        }
++        .container{
++            max-width: 1170px;
++            margin: auto;
++        }
++        .row{
++            display: flex;
++            flex-wrap: wrap;
++        }
++        img{
++            height: 15rem;
++            width: 15rem;
++            border-radius: 50%;
++            vertical-align: middle;
++        }
++        .section-title{
++            /*background-color: blue;*/
++            padding: 0 15px;
++            width: 100%;
++            text-align: center;
++            margin-bottom: 60px;
++        }
++        .section-title h2{
++            color: black;
++            font-size: 60px;
++            font-family: Arial;
++        }
++        .github-repository{
++            height: 60px;
++            width: 65px;
++            margin-top: -50px;
++            border-radius: 50%;
++            align-items: center;
++            display: inline-block;
++            transition: all 0.3s ease;
++        }
++        .github-repository:hover{
++            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
++        }
++        [data-tooltip]::after{
++            position: absolute;
++            width: 75px;
++            height: 35px;
++            top: 250px;
++            text-align: center;
++            box-sizing: border-box;
++            padding: 2px;
++            border-radius: 3px;
++            content: attr(data-tooltip);
++            color: white;
++            background: dimgrey;
++            font-size: 10px;
++            visibility: hidden;
++            opacity: 0;
++            transition: opacity 0.3s;
++        }
++        [data-tooltip]:hover::after{
++            opacity: 1;
++            visibility: visible;
++        }
++
++        /*Style for nettsiden*/
++        .team-section{
++            min-height: 100vh;
++            background-color: #EDC7B7;
++            padding: 80px 0;
++        }
++        .team-section .card{
++            width: calc((100% / 4) -30px);
++            margin: 0 15px 40px;
++            padding: 30px 0 0;
++            position: relative;
++        }
++        /*Effekten rundt bilder*/
++        .team-section .card-img{
++            width: 15rem;
++            height: 15rem;
++            margin: auto;
++            border-radius: 50%;
++            transition: box-shadow 0.3s ease;
++            border: 10px solid transparent;
++            top: 3.4rem;
++        }
++        .team-section .card:hover .card-img{
++            box-shadow: 0 0 10px black;
++        }
++        .team-section .card-img{
++            border-radius: 50%;
++        }
++        /*informasjon til visittkort*/
++        .team-section .card-info{
++            background-color: white;
++            padding: 20px 15px;
++            text-align: center;
++            position: absolute;
++            left: 0;
++            bottom: 100%;
++            width: 100%;
++            visibility: hidden;
++            opacity: 0;
++        }
++        .team-section .card:hover .card-info{
++            visibility: visible;
++            opacity: 1;
++            transition: all 0.3s ease;
++        }
++        .team-section .card-info::before{
++            content: "";
++            position: absolute;
++            left: calc(50% - 20px);
++            top: 100%;
++            border-left: 20px solid transparent;
++            border-right: 20px solid transparent;
++            border-top: 20px solid white;
++        }
++        .team-section .card-info h3{
++            font-size: 20px;
++            color: deeppink;
++        }
++        .team-section .card-info p{
++            font-size: 16px;
++            color: deepskyblue;
++            margin: 0 0 10px;
++        }
++        .team-section .card-info .github-icon a{
++            display: inline-block;
++            margin: 3px;
++            padding: 5px;
++            border-radius: 4px;
++            transition: all 0.3s ease;
++        }
++        .team-section .card-info .github-icon a:hover{
++            box-shadow: 0 0 10px black;
++        }
++        .team-section .card-info .github-icon img{
++            width: 30px;
++            height: 30px;
++        }
++
++        /*Reponsive*/
++        @media (max-width: 991px) {
++            .team-section .card{
++                width: calc(50% - 30px);
++                background-color: white;
++                padding: 0 15px;
++            }
++            .team-section .card-info{
++                position: relative;
++                visibility: visible;
++                opacity: 1;
++                bottom: auto;
++                left: auto;
++            }
++            .team-section .card-img{
++                margin: 30px auto 10px;
++                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
++            }
++            .team-section .card:hover .card-img{
++                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
++            }
++            .team-section .card-info::before{
++                content: none;
++            }
++            .team-section .card-info{
++                padding: 20px 0 30px;
++            }
++        }
++        @media (max-width: 574px) {
++            .team-section .card{
++                width: calc(100% - 30px);
++            }
++
++    </style>
++
+ </head>
+-
+ <body>
+-<header class="navbar">
+-
+-
+-    <a href="/Howweroll/how-we-roll.html" id="knapp" >REGISTRERING</a>
+-    <a href="index.html" id="knapp1" >Visittkort</a>
+-    <a href="/Howweroll/hwr-report.html" id="knapp2">Report</a>
+-</header>
+-<h1 class="visitkort">VISITKORT </h1>
+-
+-<div id="alle">
+-
+ 
+-    <a href="#" class="link">
+-        <div class="karenanne" id="karenkort">
+-
+-            <img src="bilder/karen.png" width="150" alt="Karen Anderson's Profile Picture" id="karen" class="bilder">
+-            <h2 class="navn" id="karen-navn">Karen Anderson</h2>
+-            <p class="tekst" id="karen-tekst">
+-                Studie: IT<br>
+-                Kontakt: 977 77 777<br>
+-            </p>
+-
+-        </div>
+-    </a>
+-
+-
+-    <a href="#" class="link">
+-        <div class="karenanne" id="anne">
+-
+-            <img src="bilder/anne.png" width="150" alt="Anne Ofstad's Profile Picture" id="karenbilde" class="bilder">
+-            <h2 class="navn" id="anne-navn">Anne Ofstad</h2>
+-            <p class="tekst" id="anne-tekst">
+-                Studie: IKT<br>
+-                Kontakt: 977 77 777<br>
+-            </p>
+-
++<section class="team-section">
++    <div class="container">
++        <div class="row">
++            <div class="section-title">
++                <h2>Gruppe 2B</h2>
++            <!--Repository til gruppen-->
++                <a data-tooltip="Repository til gruppe2B" href="https://github.com/karenan1811/Visitkortutarbeid"><img class="github-repository" src="bilder/githubicon2.png" alt="github"></a>
++            </div>
+         </div>
+-    </a>
+-
+-
+-    <a href="#" class="link">
+-        <div class="erlingaleks" id="erling">
+-
+-            <img src="bilder/erling.png" width="150" alt="Erling Valen's Profile Picture" id="erlingbilde" class="bilder">
+-            <h2 class="navn" id="erling-navn">Erling Valen</h2>
+-            <p class="tekst" id="erling-tekst">
+-                Studie: IKT<br>
+-                Kontakt: 977 77 777<br>
+-            </p>
+-
+-        </div>
+-    </a>
+-
+-    <a href="#" class="link">
+-        <div class="erlingaleks" id="alekskort">
+-
+-            <img src="bilder/aleksander.png" width="150" alt="Aleksander Grimstad Mo's Profile Picture" id="aleks" class="bilder">
+-            <h2 class="navn" id="aleks-navn">Aleksander Grimstad Mo</h2>
+-            <p class="tekst" id="aleks-tekst">
+-                Studie: IKT<br>
+-                Kontakt: 977 77 777<br>
+-            </p>
+-
+-        </div>
+-    </a>
+-
+-</div>
+-
++        <div class="row">
++            <!-- card start -->
++            <div class="card">
++                <div class="card-img">
++                    <img src="bilder/karen.png" alt="Karen" />
++                </div>
++                <div class="card-info">
++                    <h3>Karen</h3>
++                    <p>Student</p>
++                    <div class="github-icon">
++                        <a href="https://github.com/karenan1811"><img src="bilder/githubicon.png" alt="github"></a>
++                    </div>
++                </div>
++            </div>
++            <!-- card end -->
++            <!-- card start -->
++            <div class="card">
++                <div class="card-img">
++                    <img src="bilder/anne.jpg" alt="Anne" />
++                </div>
++                <div class="card-info">
++                    <h3>Anne</h3>
++                    <p>IT Student</p>
++                    <div class="github-icon">
++                        <a href="https://github.com/AnneOfstad"><img src="bilder/githubicon.png" alt="Github"></a>
++                    </div>
++                </div>
++            </div>
++            <!-- card end -->
++            <!-- card start -->
++            <div class="card">
++                <div class="card-img">
++                    <img src="bilder/aleksander.png" alt="Aleksander"/>
++                </div>
++                <div class="card-info">
++                    <h3>Aleksander</h3>
++                    <p>Student</p>
++                    <div class="github-icon">
++                        <a href="https://github.com/AleksanderGm"><img src="bilder/githubicon.png" alt="Github"></a>
++                    </div>
++                </div>
++            </div>
++            <!-- card end -->
++            <!-- card start -->
++            <div class="card">
++                <div class="card-img">
++                    <img src="bilder/erling.png" alt="Erling"/>
++                </div>
++                <div class="card-info">
++                    <h3>Erling</h3>
++                    <p>Student</p>
++                    <div class="github-icon">
++                        <a href="https://github.com/ErlingV"><img src="bilder/githubicon.png" alt="Github"></a>
++                    </div>
++                </div>
++            </div>
++            <!-- card end -->
++        </div>
++    </div>
++</section>
+ </body>
+-</html>
+\ No newline at end of file
++</html>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"176bba3c-b30b-4e91-87c6-7f0e3c165c3b\" name=\"Changes\" comment=\"&#10;Jeg har endret hwr-report.html med grafer.\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Merge.Settings\">\r\n    <option name=\"BRANCH\" value=\"origin/karen\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1z5k5cGWYYRF025T7SjgyCtTqgi\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$/IdeaProjects/practice/index.html\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"176bba3c-b30b-4e91-87c6-7f0e3c165c3b\" name=\"Changes\" comment=\"\" />\r\n      <created>1633445154285</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1633445154285</updated>\r\n      <workItem from=\"1633616555209\" duration=\"37000\" />\r\n      <workItem from=\"1633616605476\" duration=\"5000\" />\r\n      <workItem from=\"1633616627193\" duration=\"63000\" />\r\n      <workItem from=\"1633616816498\" duration=\"325000\" />\r\n      <workItem from=\"1633638373939\" duration=\"178000\" />\r\n      <workItem from=\"1633711081517\" duration=\"5119000\" />\r\n      <workItem from=\"1633885410692\" duration=\"9000\" />\r\n    </task>\r\n    <task id=\"LOCAL−00001\" summary=\"new files\">\r\n      <created>1633456947894</created>\r\n      <option name=\"number\" value=\"LOCAL−00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL−00001\" />\r\n      <updated>1633456947894</updated>\r\n    </task>\r\n    <task id=\"LOCAL−00002\" summary=\"new files\">\r\n      <created>1633457946594</created>\r\n      <option name=\"number\" value=\"LOCAL−00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL−00002\" />\r\n      <updated>1633457946594</updated>\r\n    </task>\r\n    <task id=\"LOCAL−00003\" summary=\"Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css\">\r\n      <created>1633458894245</created>\r\n      <option name=\"number\" value=\"LOCAL−00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL−00003\" />\r\n      <updated>1633458894245</updated>\r\n    </task>\r\n    <task id=\"LOCAL−00004\" summary=\"Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css\">\r\n      <created>1633522484636</created>\r\n      <option name=\"number\" value=\"LOCAL−00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL−00004\" />\r\n      <updated>1633522484636</updated>\r\n    </task>\r\n    <task id=\"LOCAL−00005\" summary=\"Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css\">\r\n      <created>1633713556356</created>\r\n      <option name=\"number\" value=\"LOCAL−00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL−00005\" />\r\n      <updated>1633713556356</updated>\r\n    </task>\r\n    <task id=\"LOCAL−00006\" summary=\"&#10;Jeg har endret hwr-report.html med grafer.\">\r\n      <created>1633717009762</created>\r\n      <option name=\"number\" value=\"LOCAL−00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL−00006\" />\r\n      <updated>1633717009762</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"new files\" />\r\n    <MESSAGE value=\"Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css\" />\r\n    <MESSAGE value=\"&#10;Jeg har endret hwr-report.html med grafer.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"&#10;Jeg har endret hwr-report.html med grafer.\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4eaa5b7b2cb9cfb62a165a23ef8ea3b5c371c9d1)
++++ b/.idea/workspace.xml	(date 1633886253908)
+@@ -1,8 +1,21 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="176bba3c-b30b-4e91-87c6-7f0e3c165c3b" name="Changes" comment="&#10;Jeg har endret hwr-report.html med grafer.">
++    <list default="true" id="038f2023-9d12-45a1-83ec-c70995ccb637" name="Changes" comment="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css">
++      <change afterPath="$PROJECT_DIR$/Ekstra/index2.html" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Ekstra/styles2.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/bilder/anne.jpg" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/bilder/githubicon.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/bilder/githubicon2.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/how-we-roll.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Howweroll/how-we-roll.css" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Howweroll/how-we-roll.html" beforeDir="false" afterPath="$PROJECT_DIR$/how-we-roll.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Howweroll/hwr-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/hwr-report.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/bilder/aleksander.png" beforeDir="false" afterPath="$PROJECT_DIR$/bilder/aleksander.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/bilder/karen.png" beforeDir="false" afterPath="$PROJECT_DIR$/bilder/karen.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -51,8 +64,7 @@
+       <workItem from="1633616627193" duration="63000" />
+       <workItem from="1633616816498" duration="325000" />
+       <workItem from="1633638373939" duration="178000" />
+-      <workItem from="1633711081517" duration="5119000" />
+-      <workItem from="1633885410692" duration="9000" />
++      <workItem from="1633711081517" duration="3919000" />
+     </task>
+     <task id="LOCAL−00001" summary="new files">
+       <created>1633456947894</created>
+@@ -84,13 +96,7 @@
+       <option name="presentableId" value="LOCAL−00005" />
+       <updated>1633713556356</updated>
+     </task>
+-    <task id="LOCAL−00006" summary="&#10;Jeg har endret hwr-report.html med grafer.">
+-      <created>1633717009762</created>
+-      <option name="number" value="LOCAL−00006" />
+-      <option name="presentableId" value="LOCAL−00006" />
+-      <updated>1633717009762</updated>
+-    </task>
+-    <option name="localTasksCounter" value="7" />
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -111,7 +117,6 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="new files" />
+     <MESSAGE value="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css" />
+-    <MESSAGE value="&#10;Jeg har endret hwr-report.html med grafer." />
+-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Jeg har endret hwr-report.html med grafer." />
++    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/karen'&#10;&#10;# Conflicts:&#10;#&#9;index.html&#10;#&#9;style.css" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: Ekstra/index2.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Ekstra/index2.html b/Ekstra/index2.html
+new file mode 100644
+--- /dev/null	(date 1633885951503)
++++ b/Ekstra/index2.html	(date 1633885951503)
+@@ -0,0 +1,86 @@
++<!DOCTYPE html>
++<html lang="nb">
++
++<head>
++    <meta charset="UTF-8">
++    <title>Visittkort</title>
++    <link rel="stylesheet" href="styles2.css">
++    <meta name=viewport content="width=device-width, initial-scale=1">
++</head>
++
++<body>
++
++<header class="navbar">
++    <h1 class="visittkort">VISITTKORT </h1>
++    <div id="navdiv">
++        <a href="how-we-roll.html" class="knapp" >Registrering</a>
++        <a href="index.html" class="knapp" >Visittkort</a>
++        <a href="hwr-report.html" class="knapp">Report</a>
++    </div>
++</header>
++
++<div id="alle">
++
++        <div class="kaea" id="karenkort">
++
++            <a href="#" class="link">
++
++                <img src="bilder/karen.png" width="150" alt="Karen Anderson's Profile Picture" id="karen" class="bilder">
++
++                <h2 class="navn" id="karen-navn">Karen Anderson</h2>
++
++                <p class="tekst" id="karen-tekst">
++                Studie: IT<br>
++                Kontakt: 977 77 777<br>
++                </p>
++
++            </a>
++
++        </div>
++
++
++
++        <div class="kaea" id="anne">
++
++            <a href="#" class="link">
++            <img src="bilder/anne.png" width="150" alt="Anne Ofstad's Profile Picture" id="karenbilde" class="bilder">
++            <h2 class="navn" id="anne-navn">Anne Ofstad</h2>
++            <p class="tekst" id="anne-tekst">
++                Studie: IKT<br>
++                Kontakt: 977 77 777<br>
++            </p>
++            </a>
++
++        </div>
++
++
++        <div class="kaea" id="erling">
++
++            <a href="#" class="link">
++            <img src="bilder/erling.png" width="150" alt="Erling Valen's Profile Picture" id="erlingbilde" class="bilder">
++            <h2 class="navn" id="erling-navn">Erling Valen</h2>
++            <p class="tekst" id="erling-tekst">
++                Studie: IKT<br>
++                Kontakt: 977 77 777<br>
++            </p>
++            </a>
++
++        </div>
++
++        <div class="kaea" id="alekskort">
++
++            <a href="#" class="link">
++            <img src="bilder/aleksander.png" width="150" alt="Aleksander Grimstad Mo's Profile Picture" id="aleks" class="bilder">
++            <h2 class="navn" id="aleks-navn">Aleksander Grimstad Mo</h2>
++            <p class="tekst" id="aleks-tekst">
++                Studie: IKT<br>
++                Kontakt: 977 77 777<br>
++            </p>
++            </a>
++
++        </div>
++
++</div>
++
++</body>
++</html>
+\ No newline at end of file
